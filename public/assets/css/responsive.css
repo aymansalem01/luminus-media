@@ -3,6 +3,9 @@
   body {
     font-size: 14px;
   }
+  .country-card{
+    margin: 10px;
+  }
   .ptb-100 {
     padding-top: 60px;
     padding-bottom: 60px;

@@ -178,7 +178,7 @@
     transform: translateY(-50%) rotate(-90deg);
 }
 .navbar-area .navbar .navbar-nav .nav-item .dropdown-menu .nav-item .nav-link.active, .navbar-area .navbar .navbar-nav .nav-item .dropdown-menu .nav-item .nav-link:hover {
-    color: var(--optionalColor);
+    color: var(--transColor);
 }
 .navbar-area .navbar .navbar-nav .nav-item .dropdown-menu .nav-item:last-child .nav-link {
     border-bottom: none;
@@ -195,7 +195,7 @@
 color: var(--blackColor);
 }
 .navbar-area .navbar .navbar-nav .nav-item .dropdown-menu .nav-item .dropdown-menu .nav-item .nav-link.active, .navbar-area .navbar .navbar-nav .nav-item .dropdown-menu .nav-item .dropdown-menu .nav-item .nav-link:hover {
-color: var(--optionalColor);
+color: var(--transColor);
 }
 .navbar-area .navbar .navbar-nav .nav-item .dropdown-menu .nav-item .dropdown-menu .nav-item .nav-link:hover .dropdown-menu {
 opacity: 1;
@@ -213,7 +213,7 @@ transform: translate3d(0, 18px, 0);
 color: var(--blackColor);
 }
 .navbar-area .navbar .navbar-nav .nav-item .dropdown-menu .nav-item .dropdown-menu .nav-item .dropdown-menu .nav-item .nav-link:hover, .navbar-area .navbar .navbar-nav .nav-item .dropdown-menu .nav-item .dropdown-menu .nav-item .dropdown-menu .nav-item .nav-link.active {
-color: var(--optionalColor);
+color: var(--transColor);
 }
 .navbar-area .navbar .navbar-nav .nav-item .dropdown-menu .nav-item .dropdown-menu .nav-item .dropdown-menu .nav-item:hover .dropdown-menu {
 opacity: 1;
@@ -231,7 +231,7 @@ transform: translate3d(0, 18px, 0);
 color: var(--blackColor);
 }
 .navbar-area .navbar .navbar-nav .nav-item .dropdown-menu .nav-item .dropdown-menu .nav-item .dropdown-menu .nav-item .dropdown-menu .nav-item .nav-link:hover, .navbar-area .navbar .navbar-nav .nav-item .dropdown-menu .nav-item .dropdown-menu .nav-item .dropdown-menu .nav-item .dropdown-menu .nav-item .nav-link.active {
-color: var(--optionalColor);
+color: var(--transColor);
 }
 .navbar-area .navbar .navbar-nav .nav-item .dropdown-menu .nav-item:hover .dropdown-menu {
 opacity: 1;
