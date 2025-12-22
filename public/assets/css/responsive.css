@@ -163,6 +163,7 @@
   .academics-item {
     padding: 35px 30px;
     margin-bottom: 30px;
+    height: auto;
   }
   .academics-item h4 {
     margin-bottom: 20px;

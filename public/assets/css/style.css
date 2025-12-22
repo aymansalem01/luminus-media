@@ -56,18 +56,36 @@ This files table contents are outlined below>>>>>
 Default CSS
 =================================================*/
 :root {
-    --fontFamily: 'Lexend', sans-serif;
-    --mainBackground: #000000;
-    --mainColor: #a3228e;
+    --fontFamily: Arial, Helvetica, sans-serif;
+    --mainBackground: #0f0f0f;
+    --mainColor: #C6A75E;
     --secounderyColor: #F2F8F1;
-    --paragraphColor: #000000;
+    --paragraphColor: #ffffff;
     --placeholderColor: #A6A6A6;
     --paragraphColorSecond: #B9B9BA;
     --whiteColor: #ffffff;
-    --transColor: #f2a71b;
-    --blackColor: #002147;
+    --transColor: #C6A75E;
+    --blackColor: #1C2A3A;
+    --thirdColor: #5f6f52;
     --fontSize: 16px;
     --transition: .5s;
+}
+
+.main-color{
+    color: var(--mainColor);
+}
+.second-color{
+    background-color: rgba(255, 255, 255, 0.1);
+
+}
+.w-45{
+    width: 45%;
+}
+.w-45 i {
+    font-size: 25px;
+}
+.radius{
+    border-radius: 7px;
 }
 
 body {
@@ -75,6 +93,7 @@ body {
     margin: 0;
     font-size: var(--fontSize);
     font-family: var(--fontFamily);
+    background-color: #0f0f0f;
 }
 
 .container-fluid {
@@ -93,7 +112,8 @@ h3,
 h4,
 h5,
 h6 {
-    font-weight: 700;
+    font-weight: 450;
+    font-family: var(--fontFamily);
 }
 
 a {
@@ -177,25 +197,65 @@ p:last-child {
     background-color: #e2e3e4;
 }
 
+.hr{
+    color: var(--mainColor);
+}
 /*default-btn*/
 .default-btn {
-    background-color: var(--mainColor);
+    background-color: var(--blackColor);
     -webkit-transition: var(--transition);
     transition: var(--transition);
     padding: 15px 27px;
     color: var(--whiteColor);
     display: inline-block;
-    border-radius: 40px;
+    border-radius: 25px;
+    position: relative;
+    border: none;
+    font-size: var(--fontSize);
+    font-weight: 500;
+}
+.another-btn{
+        background-color: var(--blackColor);
+    -webkit-transition: var(--transition);
+    transition: var(--transition);
+    padding: 15px 27px;
+    color: var(--whiteColor);
+    display: inline-block;
+    border-radius: 25px;
     position: relative;
     border: none;
     font-size: var(--fontSize);
     font-weight: 500;
 }
 
+.heroSection-btn{
+            background-color: var(--mainColor);
+    -webkit-transition: var(--transition);
+    transition: var(--transition);
+    padding: 15px 27px;
+    color: var(--whiteColor);
+    display: inline-block;
+    border-radius: 25px;
+    position: relative;
+    border: none;
+    font-size: var(--fontSize);
+    font-weight: 500;
+}
+
+.heroSection-btn:hover{
+    background-color: var(--mainBackground);
+}
+
+.another-btn:hover{
+        color: var(--whiteColor);
+    background-color: transparent;
+    background-color: var(--thirdColor);
+}
+
 .default-btn:hover {
     color: var(--whiteColor);
     background-color: transparent;
-    background-color: var(--transColor);
+    background-color: var(--mainColor);
 }
 
 a.under-btn {
@@ -226,7 +286,8 @@ a.white-under-btn {
 .section-title h2 {
     margin-bottom: 0;
     font-size: 35px;
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+
 }
 
 .section-title .sub-title {
@@ -243,6 +304,7 @@ a.white-under-btn {
 .section-title-2 .sub-title p {
     font-size: 20px;
     text-transform: uppercase;
+    color: var(--mainColor);
 }
 
 .section-title .sub-title i {
@@ -264,7 +326,7 @@ a.white-under-btn {
 .section-title-3 h2 {
     margin-bottom: 0;
     font-size: 48px;
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .section-title-3.text-start {
@@ -456,7 +518,7 @@ Banner Area CSS
 .banner-content .content h1 {
     font-size: 58px;
     line-height: 72px;
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
     color: var(--whiteColor);
     margin-bottom: 20px;
@@ -553,7 +615,7 @@ Banner Area 2 CSS
     text-align: center;
     margin: auto;
     position: relative;
-    padding-top: 100px;
+
 }
 
 .banner-content-2 .content span {
@@ -563,15 +625,14 @@ Banner Area 2 CSS
 
 .banner-content-2 .content h1 {
     color: var(--whiteColor);
-    font-family: 'Lexend', sans-serif;
-    font-size: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 120px;
 }
 
 .banner-content-2 .content p {
     color: #fff;
     font-size: 20px;
-    margin-bottom: 40px;
-    width: 70%;
+    width: 80%;
     margin: auto;
     margin-bottom: 30px;
 }
@@ -587,7 +648,7 @@ Banner Area 2 CSS
 
 .banner-content-2 .content .vertical-lr p {
     display: flex;
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .banner-content-2 .content .vertical-lr p span {
@@ -747,7 +808,7 @@ Slider Banner Area CSS
 }
 
 .slider-content .content .text h1 {
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: var(--whiteColor);
     font-size: 64px;
 }
@@ -786,7 +847,7 @@ Slider Banner Area CSS
 }
 
 .slider-content .content .short-info h3 {
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: var(--whiteColor);
     font-size: 30px;
     margin-bottom: 30px;
@@ -820,7 +881,7 @@ Undergraduate Area CSS
 .undergraduate-area .item .content h3 {
     font-size: 24px;
     color: var(--whiteColor);
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .undergraduate-area .item .content-2 {
@@ -849,11 +910,13 @@ Academics Area CSS
 }
 
 .academics-area .section-title h2 {
-    color: var(--blackColor);
+    color: var(--whiteColor);
+    font-size: 45px;
+    font-weight: bold;
 }
 
 .bg-color-1 .academics-item {
-    border: 1px solid var(--whiteColor);
+    border: 1px solid var(--mainColor);
 
 }
 
@@ -862,16 +925,22 @@ Academics Area CSS
 }
 
 .bg-color-1 .academics-item:hover {
-    background-color: var(--whiteColor);
+    background-color: var(--mainColor);
 }
 
 .academics-item {
     padding: 45px 40px;
     text-align: center;
-    border: 1px solid #eeeeee;
+    border: 2px solid #eeeeee;
     transition: var(--transition);
-    background-color: var(--secounderyColor);
+    background-color: rgba(0, 0, 0, .3);
     border-radius: 25px;
+    height: 100%;
+}
+.academics-item:hover {
+    border-color: var(--mainColor);
+    transform: translateY(-10px);
+
 }
 
 .academics-item img {
@@ -881,7 +950,8 @@ Academics Area CSS
 .academics-item h4 {
     margin-bottom: 20px;
     font-size: 22px;
-    font-family: 'Lexend', sans-serif;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
     color: var(--mainColor);
 }
 
@@ -940,7 +1010,7 @@ About Us Area CSS
 .about-us-area .text-content h2 {
     font-size: 48px;
     margin-bottom: 20px;
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .about-us-area .text-content p {
@@ -965,7 +1035,7 @@ About Us Area CSS
 .notice-content h4 {
     font-size: 24px;
     margin-bottom: 20px;
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: var(--whiteColor);
     line-height: 34px;
 }
@@ -977,7 +1047,7 @@ About Us Area CSS
 
 .notice-content .author-info h5 {
     color: var(--whiteColor);
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     margin-bottom: 8px;
 }
@@ -1045,7 +1115,7 @@ About Us Area 2 CSS
 }
 
 .about-us-area-2 .content-items .content h2 {
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 35px;
 }
 
@@ -1074,7 +1144,7 @@ About Us Area 2 CSS
 }
 
 .global-alumni-events .global-content-items .content h2 {
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 48px;
     margin-bottom: 30px;
 }
@@ -1187,7 +1257,7 @@ About Us Area 3 CSS
 .about-alumni .content h2 {
     font-size: 48px;
     margin-bottom: 30px;
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .about-alumni .content p {
@@ -1228,7 +1298,7 @@ Courses CSS
     margin-top: 10px;
     font-size: 22px;
     line-height: 32px;
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 20px;
 }
 
@@ -1303,7 +1373,7 @@ Courses CSS
 .grid-sorting .title p {
     font-size: 16px;
     font-weight: 700;
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: var(--blackColor);
 }
 
@@ -1353,7 +1423,7 @@ Courses Details CSS
 
 .courses-details .header-title h2 {
     font-size: 48px;
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 30px;
 }
 
@@ -1422,7 +1492,7 @@ Courses Details CSS
 
 .courses-details .content .content-pra .title h3 {
     font-size: 22px;
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .courses-details .content .content-pra .title::after {
@@ -1438,7 +1508,7 @@ Courses Details CSS
 .courses-details .content .content-pra .tag span {
     margin-right: 8px;
     font-weight: 700;
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .courses-details .content .content-pra .tag ul {
@@ -1504,7 +1574,7 @@ Courses Details CSS
 
 .instructor-card .title h3 {
     font-size: 22px;
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .instructor-card .title::after {
@@ -1619,7 +1689,7 @@ Courses Details CSS
 .course-widget-area .content .pricing h4 {
     font-size: 30px;
     margin-bottom: 30px;
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .course-widget-area .content ul {
@@ -1700,7 +1770,7 @@ Academics Section Area CSS
     display: block;
     background-color: var(--secounderyColor);
     color: var(--blackColor);
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     font-weight: 700;
     transition: var(--transition);
@@ -1722,7 +1792,7 @@ Academics Section Area CSS
     display: block;
     font-weight: 600;
     font-size: 18px;
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .academics-section .academics-left .ac-contact a {
@@ -1731,7 +1801,7 @@ Academics Section Area CSS
     display: block;
     padding: 20px;
     margin-bottom: 20px;
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     font-weight: 600;
     font-size: 18px;
@@ -1753,7 +1823,7 @@ Academics Section Area CSS
 .academics-section .ac-overview .pera-title h2 {
     font-size: 48px;
     font-weight: 600;
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     display: flex;
     align-items: center;
     margin-bottom: 50px;
@@ -1793,7 +1863,7 @@ Academics Section Area CSS
 }
 
 .academics-section .ac-overview .pera-dec h3 {
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 30px;
     font-size: 30px;
 }
@@ -1809,7 +1879,7 @@ Academics Section Area CSS
     text-align: center;
     background-color: var(--secounderyColor);
     font-weight: 700;
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .academics-section .ac-overview .pera-dec .graduate-area {
@@ -1837,14 +1907,14 @@ Academics Section Area CSS
 }
 
 .academics-section .ac-overview .pera-dec .graduate-area .info-box h3 {
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 50px;
     font-size: 30px;
     font-weight: 800;
 }
 
 .academics-section .ac-overview .pera-dec h4 {
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     font-weight: 800;
 }
@@ -1880,7 +1950,7 @@ Academics Section Area CSS
 
 .graduate-events .content-items .content h2 {
     font-size: 30px;
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .graduate-events .content-items .content a {
@@ -2003,7 +2073,7 @@ Academics Section Area CSS
     display: block;
     color: var(--whiteColor);
     font-size: 18px;
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
     margin-bottom: 15px;
 }
@@ -2020,7 +2090,7 @@ Academics Section Area CSS
 
 .faculty-model .faculty-card .content h4 {
     font-size: 22px;
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -2034,7 +2104,7 @@ Academics Section Area CSS
 }
 
 .pera-dec .program-info .single-program-info h4 {
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 70px;
     margin-bottom: 20px;
 }
@@ -2063,7 +2133,7 @@ Academics Section Area CSS
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 30px;
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .pera-dec .apply-program .tuition-fees {
@@ -2107,7 +2177,7 @@ Academics Section Area CSS
 }
 
 .pera-dec .program-points .single-point-list h4 {
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
 }
 
@@ -2119,7 +2189,7 @@ Academics Section Area CSS
 }
 
 .pera-dec .program-points .single-point-list .number-list h4 {
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
 }
 
@@ -2192,14 +2262,16 @@ Academics Section Area CSS
     justify-content: space-between;
     align-items: center;
 }
-
+.faq-item:hover .faq-question{
+    color: var(--mainColor);
+}
 .faq-question {
     font-size: 30px;
     font-weight: 700;
     padding-bottom: 3px;
     padding-top: 3px;
-    color: var(--blackColor);
-    font-family: 'Lexend', sans-serif;
+    color: var(--whiteColor);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .icon-container i {
@@ -2215,7 +2287,7 @@ Academics Section Area CSS
     transition: 0.3s ease-in-out;
     padding: 0px 20px;
     max-height: 0;
-    border-bottom: 2px solid var(--blackColor);
+    border-bottom: 2px solid var(--mainColor);
 }
 
 .faq-answer.active {
@@ -2236,7 +2308,7 @@ Academics Section Area CSS
 .list-item-list h4 {
     font-size: 20px;
     margin-bottom: 30px;
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .list-item-list .list-item-title {
@@ -2462,7 +2534,7 @@ Features Area CSS
 .features-content .content h2,
 .features-content-2 .content h2 {
     font-size: 48px;
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: var(--whiteColor);
     margin-bottom: 50px;
 }
@@ -2497,7 +2569,7 @@ Features Area CSS
 
 .features-content .content .item .item-content h3,
 .features-content-2 .content .item .item-content h3 {
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 22px;
     color: var(--whiteColor);
 }
@@ -2547,7 +2619,7 @@ Features Area CSS
 .features-content-2 .academic-item .image .number h3 {
     font-size: 96px;
     color: var(--whiteColor);
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .features-content-2 .academic-item .content {
@@ -2557,7 +2629,7 @@ Features Area CSS
 
 .features-content-2 .academic-item .content h4 {
     font-size: 22px;
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .features-content-2 .academic-item .content .btn {
@@ -2604,7 +2676,7 @@ Video Area CSS
     font-size: 20px;
     text-align: center;
     margin: auto;
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /*================================================
@@ -2646,7 +2718,7 @@ Find Degree Area CSS
     font-size: 24px;
     color: var(--whiteColor);
     margin-bottom: 20px;
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .find-degree .content-1 .selector-box,
@@ -2667,7 +2739,7 @@ Find Degree Area CSS
 
 .find-degree .content-1 .search-key label {
     color: var(--blackColor);
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
     margin-bottom: 15px;
     font-size: 16px;
@@ -2730,14 +2802,14 @@ Find Degree Area CSS
 .find-degree .content-image .content h3 {
     font-size: 40px;
     color: var(--whiteColor);
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 0px;
 }
 
 .find-degree .content-image .content h4 {
     font-size: 30px;
     color: var(--mainColor);
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .find-degree .content-image .content .btn {
@@ -2771,7 +2843,7 @@ Find Degree Area CSS
 }
 
 .find-degree .search-key span {
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
     margin-bottom: 4px;
     font-size: 16px;
@@ -2787,7 +2859,7 @@ Find Degree Area CSS
 
 .find-degree .content-2 h4 {
     font-size: 24px;
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
     margin-bottom: 30px;
 }
@@ -2838,6 +2910,7 @@ About University Area CSS
 .about-university {
     background-color: var(--secounderyColor);
     position: relative;
+    padding: 20px;
 }
 
 .about-university .sub-title,
@@ -2858,12 +2931,19 @@ About University Area CSS
     font-size: 30px;
     margin-right: 8px;
 }
+.scope-heder{
+    text-align: center;
+    margin: 10px 0 50px 0;
+    font-weight: bold;
+    color: var(--whiteColor);
+}
 
 .about-university .content h2,
 .about-university .content h2 {
-    font-size: 48px;
-    font-family: 'Lexend', sans-serif;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
     color: var(--whiteColor);
+    font-weight: bold;
 }
 
 .about-university .content h2 {
@@ -2898,7 +2978,7 @@ About University Area CSS
 }
 
 .about-university .content .item .item-content h3 {
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 22px;
     color: var(--blackColor);
 }
@@ -2958,7 +3038,7 @@ News Area CSS
 }
 
 .news-item .content h2 {
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 24px;
     margin-bottom: 30px;
 }
@@ -2993,7 +3073,7 @@ News Area CSS
 }
 
 .news-content-right .content-box .content h3 {
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 24px;
     margin-bottom: 20px;
 }
@@ -3046,7 +3126,7 @@ News Area CSS
 }
 
 .news-content-item .content-box .content h3 {
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
 }
 
@@ -3096,7 +3176,7 @@ Blog Area CSS
     padding-bottom: 20px;
     border-bottom: 1px solid #d6d6d6;
     font-size: 24px;
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .widget-area .widget-search form {
@@ -3278,7 +3358,7 @@ Blog Area CSS
     color: var(--whiteColor);
     font-weight: 800;
     position: relative;
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 40px;
     margin-bottom: 175px;
 }
@@ -3295,7 +3375,7 @@ Blog Area CSS
 
 .widget-banner .blog-banner-content .price {
     color: var(--whiteColor);
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 64px;
     font-weight: 800;
     margin-bottom: 30px;
@@ -3382,7 +3462,7 @@ Blog Area CSS
 
 .blog-single-card .content h3 {
     font-size: 22px;
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 30px;
 }
 
@@ -3516,7 +3596,7 @@ Blog Area CSS
 
 .blog-details-desc .article-content h3 {
     font-size: 30px;
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 30px
 }
 
@@ -3553,7 +3633,7 @@ blockquote p,
     margin-bottom: 0;
     font-weight: 600;
     font-size: 20px !important;
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 0px !important;
 }
 
@@ -3583,7 +3663,7 @@ blockquote p,
     top: -1px;
     font-size: 18px;
     font-weight: 800;
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .blog-details-desc .article-footer .article-tags a {
@@ -3619,7 +3699,7 @@ blockquote p,
     font-weight: 700;
     position: relative;
     top: -1px;
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .blog-details-desc .article-footer .article-share .social li a {
@@ -3645,7 +3725,7 @@ blockquote p,
 
 .comments-area .comments-title {
     font-size: 30px;
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 800;
     position: relative;
     margin-bottom: 50px;
@@ -3696,7 +3776,7 @@ blockquote p,
 .comments-area .comment-author .fn {
     font-weight: 700;
     font-size: 20px;
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .comments-area .comment-author .reply {
@@ -3768,7 +3848,7 @@ blockquote p,
 
 .comments-area .comment-reply-title {
     font-size: 30px;
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 800;
     position: relative;
     margin-bottom: 50px;
@@ -3908,7 +3988,7 @@ Faculty CSS
 }
 
 .faculty-area .content .text h3 {
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
     color: var(--whiteColor);
 }
@@ -3919,7 +3999,7 @@ Faculty CSS
 }
 
 .faculty-area-2 .heading h2 {
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 48px;
     color: white;
 }
@@ -3939,15 +4019,19 @@ Faculty CSS
 .country-card {
     color: var(--whiteColor);
     border-radius: 25px;
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: rgba(255, 255, 255, 0.3);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 15px;
     margin: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
 }
 
 .country-card:hover {
     background-color: rgba(255, 255, 255, 0.2);
     transform: translateY(-5px);
+    border-color: var(--thirdColor);
 }
 
 .faculty-area-3 .content {
@@ -3964,7 +4048,7 @@ Faculty CSS
 .faculty-area-3 .content h2 {
     color: var(--whiteColor);
     margin-bottom: 10px;
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 48px;
 }
 
@@ -3984,14 +4068,16 @@ Contact Area CSS
     margin-right: 30px;
 }
 
-.contact-content .header-content h2 {
-    font-size: 30px;
-    font-family: 'Lexend', sans-serif;
+.contact-content .header-content h2 ,h3 {
+    font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 30px;
+    color: var(--whiteColor);
+    font-weight: bold;
 }
 
 .contact-content .header-content p a {
     font-weight: 600;
+    color: var(--mainColor);
 }
 
 .map-pd {
@@ -4038,20 +4124,19 @@ Contact Area CSS
 .contact-form .form-control {
     border-radius: 0;
     background-color: transparent !important;
-    -webkit-box-shadow: unset !important;
     box-shadow: unset !important;
-    -webkit-transition: var(--transition);
-    transition: var(--transition);
-    border: none !important;
     border-radius: 3px;
-    border: 1px solid #EEEEEE !important;
+    border: 1px solid #ffffff !important ;
     height: 60px;
     padding-left: 15px;
     color: var(--paragraphColor);
     font-size: 18px;
     margin-bottom: 30px;
 }
-
+.contact-form .form-control:focus{
+    border: none !important ;
+    border-bottom: solid var(--mainColor) !important;
+}
 .contact-form label {
     color: var(--paragraphColor);
     margin-bottom: 20px;
@@ -4086,7 +4171,7 @@ Contact Area CSS
 
 .contact-info .info-details ul li .info-mail {
     font-weight: 700;
-    color: var(--blackColor);
+    color: var(--whiteColor);
 }
 
 .contact-info .info-details ul li:last-child {
@@ -4124,7 +4209,7 @@ Quick Search CSS
 }
 
 .quick-search .course-search-box h4 {
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 30px;
 }
 
@@ -4170,7 +4255,7 @@ Quick Search CSS
 .quick-search .quick-content h2 {
     margin-bottom: 30px;
     font-size: 48px;
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .quick-search .quick-content .list .list-items ul {
@@ -4183,7 +4268,7 @@ Quick Search CSS
 .quick-search .quick-content .list .list-items ul li {
     margin-bottom: 25px;
     font-size: 20px;
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
     position: relative;
     color: var(--blackColor);
@@ -4210,7 +4295,7 @@ Quick Search CSS
 
 .quick-search .quick-content .apply-banner p {
     color: var(--whiteColor);
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     font-weight: 600;
 }
@@ -4224,7 +4309,7 @@ Quick Search CSS
 }
 
 .quick-search .quick-content .user-exprience .user-info .text h4 {
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
 }
 
@@ -4244,7 +4329,7 @@ Quick Search CSS
 
 .quick-search .quick-content .user-exprience .exprience .text h4 {
     font-size: 40px;
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     margin-right: 10px;
 }
 
@@ -4299,7 +4384,7 @@ Scholarship CSS
 .scholarship-area .content h2 {
     color: var(--whiteColor);
     margin-bottom: 10px;
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 48px;
 }
 
@@ -4329,21 +4414,23 @@ Success Award CSS
 }
 
 .success-award-area .content span {
-    font-size: 20px;
+    font-size: 23px;
+    font-weight: bold;
     display: block;
     margin-bottom: 10px;
     color: var(--paragraphColor);
 }
 
 .success-award-area .content h2 {
-    font-size: 40px;
-    font-family: 'Lexend', sans-serif;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
     color: var(--mainColor);
     margin-bottom: 40px;
 }
 
 .success-award-area .content p {
-    color: black;
+    color: var(--paragraphColor);
     font-weight: 500;
     font-size: 18px;
 }
@@ -4363,11 +4450,11 @@ Success Award CSS
 }
 
 .success-award-area .content .notice {
-    background-color: #F2F8F1;
+    background-color: rgba(255, 255, 255, .25);
     padding: 30px 60px;
     position: relative;
     border-radius: 15px;
-    border-left: #a3228e solid 10px;
+    border-left: var(--mainColor) solid 10px;
 }
 
 .success-award-area .content .notice i {
@@ -4381,7 +4468,7 @@ Success Award CSS
 }
 
 .success-award-area .content .notice p {
-    color: black;
+    color: var(--paragraphColor);
     font-weight: 500;
     font-size: 18px;
 }
@@ -4450,7 +4537,7 @@ Activities CSS
 .activities-card .content h2 {
     margin-top: 10px;
     font-size: 26px;
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 20px;
 }
 
@@ -4507,7 +4594,7 @@ Campus Area CSS
 
 .campus-experience-area .content h2 {
     font-size: 48px;
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 40px;
 }
 
@@ -4589,10 +4676,11 @@ Campus Area 2 CSS
 }
 
 .campus-card .content h2 {
-    background-color: var(--whiteColor);
+    background-color: rgba(0, 0, 0, .1);
+    border-radius: 25px;
     padding: 10px;
     font-size: 40px;
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 30px;
 }
 
@@ -4611,6 +4699,11 @@ Campus Tour Area CSS
     margin-right: 8px;
 }
 
+.campus-tour .content ul li {
+    padding: 3px;
+}
+
+
 .campus-tour .content .sub-title p {
     margin-bottom: 0px;
     font-size: 20px;
@@ -4623,7 +4716,9 @@ Campus Tour Area CSS
 .campus-tour .content h2 {
     margin-bottom: 30px;
     font-size: 48px;
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--mainColor);
+    font-weight: bold;
 }
 
 .campus-tour .content p {
@@ -4709,7 +4804,7 @@ Events Area CSS
 
 .event .content .text h2 {
     font-size: 30px;
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 20px;
 }
 
@@ -4757,7 +4852,7 @@ Events Area CSS
 }
 
 .upcoming-event .content h3 {
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     margin-bottom: 10px;
 }
@@ -4896,19 +4991,24 @@ Success CSS
 .success-area .success-card {
     position: relative;
 }
+.success-area .success-card:hover{
+    border: solid var(--mainColor) 5px;
+    transform: translateY(-15px) ;
+}
 
 .success-area .success-card ul {
     position: absolute;
-    bottom: 10%;
+    bottom: 0;
     left: 0;
     right: 0;
     list-style: none;
     display: inline-flex;
-    padding: 0px 15px 0 85px;
-    justify-content: space-around;
+    padding: 20px;
+    justify-content: space-between;
     align-items: center;
     margin: 0;
 }
+
 
 .success-area .success-card .play {
     position: absolute;
@@ -4943,18 +5043,24 @@ Success CSS
 }
 
 .success-area .success-card ul li h3 {
-    font-family: 'Lexend', sans-serif;
-    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 27px;
     color: var(--whiteColor);
 }
+.success-area .success-card ul li h4{
 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: var(--mainColor);
+
+}
 .success-area .success-card ul .link a {
     color: var(--whiteColor);
     font-size: 24px;
 }
 
 .success-area.success-area-2 {
-    background-color: var(--secounderyColor);
+    background-color: var(--);
     border-radius: 0 0 40px 40px;
     position: relative;
     bottom: -40px;
@@ -4978,29 +5084,31 @@ Section Banner Area CSS
 
 .section-banner .section-info {
     position: absolute;
-    bottom: -20%;
+    bottom: -26%;
     left: 0%;
     padding: 40px 60px;
     background-image: url('../img/all-img/shape-4.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: var(--mainColor);
+    background-color: rgba(0, 0, 0, 0.85);
     max-width: 628px;
+
 }
 
 .section-banner .section-info h2 {
     color: var(--whiteColor);
-    font-family: 'Lexend', sans-serif;
-    font-size: 48px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
 }
 
 .section-banner .section-info p {
-    color: #EEEEEE;
+    color: #ffffff;
 }
 
 .section-banner.bg-1 {
-    background-image: url(../img/banner/section-image-1.png);
+    background-image: url(../images/booking.png);
 }
 
 .section-banner.bg-2 {
@@ -5148,7 +5256,7 @@ Subscribe Area CSS
 }
 
 .subscribe-area-3 .content h2 {
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: var(--whiteColor);
     font-size: 48px;
     margin-bottom: 40px;
@@ -5194,7 +5302,7 @@ Footer Area CSS
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: var(--mainBackground);
+    background-color: var(--blackColor);
 }
 
 .footer-top-info {
@@ -5266,7 +5374,7 @@ Footer Area CSS
 }
 
 .footer-widget-info .footer-widget h4 {
-    font-family: 'Lexend', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 24px;
     color: var(--whiteColor);
     margin-bottom: 30px;
@@ -5567,7 +5675,7 @@ Go Top CSS
     cursor: pointer;
     bottom: 20px;
     right: 20px;
-    background-color: var(--mainColor);
+    background-color: var(--blackColor);
     color: var(--whiteColor);
     z-index: 4;
     width: 43px;
@@ -5602,7 +5710,7 @@ Go Top CSS
 
 .go-top:hover {
     background-color: var(--transColor);
-    color: var(--whiteColor);
+    color: var(--mainColor);
 }
 
 /* Preloader CSS */

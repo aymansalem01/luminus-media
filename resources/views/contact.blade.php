@@ -6,24 +6,21 @@
 <div class="section-banner bg-4">
     <div class="container">
         <div class="banner-spacing">
-            <div class="section-info">
-                <h2 data-aos="fade-up" data-aos-delay="100">Contact Us</h2>
-                <p data-aos="fade-up" data-aos-delay="200">Clgun University is more than just a place of learning; it's a
-                    place where dreams take flight, where ideas flourish, and where you'll find the support and...</p>
-            </div>
+
         </div>
     </div>
 </div>
 <!-- End Section Banner Area -->
 
 <!-- Start Contact  Area-->
-<div class="contact-area ptb-100">
+<div class="contact-area pb-100">
     <div class="container">
         <div class="row">
             <div class="col-lg-8">
                 <div class="contact-content">
                     <div class="header-content">
-                        <h2>We’d Love To Hear From You</h2>
+                        <h2 data-aos="fade-up" data-aos-delay="100" >Contact Us</h2>
+                        <h3>We’d Love To Hear From You</h3>
                         <p>We welcome contact with institutions, partners, and those interested in collaborating in creative education, media and film production, and capacity building.</p>
                         <p>For verifications, please email <a href="mailto:info@saejordan.com">info@saejordan.com</a></p>
                     </div>
@@ -67,7 +64,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-lg-12 col-md-12">
+                                {{-- <div class="col-lg-12 col-md-12">
                                     <div class="form-group">
                                         <label for="name">Inquiry Type</label>
                                         <select class="form-select" aria-label="Default select example">
@@ -77,11 +74,11 @@
                                             <option value="3">Three</option>
                                         </select>
                                     </div>
-                                </div>
+                                </div> --}}
 
                                 <div class="col-lg-12 col-md-12">
                                     <div class="form-group">
-                                        <label for="name">Inquiry</label>
+                                        <label for="name">Message</label>
                                         <textarea name="message" id="message" class="form-control" cols="30" rows="6" required
                                             data-error="Please enter your message" placeholder=""></textarea>
                                         <div class="help-block with-errors"></div>

@@ -176,80 +176,156 @@
 </div>
 <!-- End why sae Area -->
 
+<!-- Start Campus Area 2 -->
+<div class="campus-area-2 pt-100">
+    <div class="container-fluaid">
+        <div class="section-title section-title-2" data-aos="fade-up" data-aos-delay="100">
+            <div class="sub-title">
+                <p>{{ __('home.studioTitle') }}</p>
+            </div>
+            <h2>{{ __('home.studioP') }}</h2>
+        </div>
+
+        <div class="campus-slider owl-carousel owl-theme">
+            <div class="campus-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="assets/img/all-img/campus-image-1.png" alt="image">
+                <div class="content">
+                    <h2>Neve 88RS Studio</h2>
+                    <a class="default-btn" href="{{ route('booking') }}">{{ __('home.bookingButton') }}</a>
+                </div>
+            </div>
+            <div class="campus-card" data-aos="fade-up" data-aos-delay="200">
+                <img src="assets/img/all-img/campus-image-2.png" alt="image">
+                <div class="content">
+                    <h2>O2R 2.0 Studio (Stereo)</h2>
+                    <a class="default-btn" href="{{ route('booking') }}">{{ __('home.bookingButton') }}</a>
+                </div>
+            </div>
+            <div class="campus-card" data-aos="fade-up" data-aos-delay="300">
+                <img src="assets/img/all-img/campus-image-3.png" alt="image">
+                <div class="content">
+                    <h2>Apollo Studio</h2>
+                    <a class="default-btn" href="{{ route('booking') }}">{{ __('home.bookingButton') }}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Campus Area -->
+{{-- <div class="academics-area ptb-100" >
+                <div class="container">
+                    <div class="section-title" data-aos="fade-up" data-aos-delay="100">
+                        <div class="sub-title">
+                        </div>
+                        <h2 class="title-anim">Where Excellence Meets Opportunity</h2>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-4 col-sm-6 col-md-6">
+                            <div class="academics-item" data-aos="fade-up" data-aos-delay="100">
+                                <img src="assets/img/icon/education-1.png" alt="icon">
+                                <h4>Education Services</h4>
+                                <p>There are many variations of passages Lorem Ipsum avaiable but the majority hav suffered alteration in some form</p>
+                                <a href="academics.html">Learn More <i class='bx bx-right-arrow-alt'></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 col-md-6">
+                            <div class="academics-item" data-aos="fade-up" data-aos-delay="200">
+                                <img src="assets/img/icon/education-2.png" alt="icon">
+                                <h4>International Hubs</h4>
+                                <p>There are many variations of passages Lorem Ipsum avaiable but the majority hav suffered alteration in some form</p>
+                                <a href="academics.html">Learn More <i class='bx bx-right-arrow-alt'></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 col-md-6">
+                            <div class="academics-item" data-aos="fade-up" data-aos-delay="300">
+                                <img src="assets/img/icon/education-3.png" alt="icon">
+                                <h4>Bachelor’s and Master’s</h4>
+                                <p>There are many variations of passages Lorem Ipsum avaiable but the majority hav suffered alteration in some form</p>
+                                <a href="academics.html">Learn More <i class='bx bx-right-arrow-alt'></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> --}}
+
+<!-- Start How Work Area -->
+<div class="academics-area ptb-100">
+    <div class="container">
+        <div class="section-title" data-aos="fade-up" data-aos-delay="100">
+            <h2 class="title-anim">{{ __('service.howTitle') }}</h2>
+        </div>
+        <div class="row justify-content-center ">
+            <div class="col-lg-4 col-sm-6 col-md-6 mt-md-4 ">
+                <div class="academics-item" data-aos="fade-up" data-aos-delay="100">
+                    <h4>{{ __('service.cardTitle1') }}</h4>
+                    <p>{{ __('service.cardP1') }}</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-md-6 mt-md-4 ">
+                <div class="academics-item" data-aos="fade-up" data-aos-delay="200">
+                    <h4>{{ __('service.cardTitle2') }}</h4>
+                    <p>{{ __('service.cardP2') }}</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-md-6  mt-md-4 ">
+                <div class="academics-item" data-aos="fade-up" data-aos-delay="300">
+                    <h4>{{ __('service.cardTitle3') }}</h4>
+                    <p>{{ __('service.cardP3') }}</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-md-6 mt-lg-4 mt-md-4  ">
+                <div class="academics-item" data-aos="fade-up" data-aos-delay="300">
+                    <h4>{{ __('service.cardTitle4') }}</h4>
+                    <p>{{ __('service.cardP4') }}</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-md-6 mt-lg-4  mt-md-4 ">
+                <div class="academics-item" data-aos="fade-up" data-aos-delay="300">
+                    <h4>{{ __('service.cardTitle5') }}</h4>
+                    <p>{{ __('service.cardP5') }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End How Work Area -->
 <!-- Start country Area 3 -->
 <div class="faculty-area-3 ptb-100">
     <div class="container">
         <div class="row align-items-center">
             <div class="content" data-aos="fade-up" data-aos-delay="100">
-                <h2>{{__('home.partnerships')}}</h2>
-                <p>{{__('home.countryP')}}</p>
+                <h2>{{ __('home.partnerships') }}</h2>
+                <p>{{ __('home.countryP') }}</p>
                 <div class="row justify-content-around">
                     <div class="col-lg-2 col-sm-5 country-card ">
-                        <h4>{{__('home.country1')}}</h4>
+                        <h4>{{ __('home.country1') }}</h4>
                     </div>
-                      <div class="col-lg-2 col-sm-5 country-card ">
-                        <h4>{{__('home.country2')}}</h4>
+                    <div class="col-lg-2 col-sm-5 country-card ">
+                        <h4>{{ __('home.country2') }}</h4>
                     </div>
-                      <div class="col-lg-2 col-sm-5 country-card ">
-                        <h4>{{__('home.country3')}}</h4>
+                    <div class="col-lg-2 col-sm-5 country-card ">
+                        <h4>{{ __('home.country3') }}</h4>
                     </div>
-                      <div class="col-lg-2 col-sm-5 country-card ">
-                        <h4>{{__('home.country4')}}</h4>
+                    <div class="col-lg-2 col-sm-5 country-card ">
+                        <h4>{{ __('home.country4') }}</h4>
                     </div>
-                      <div class="col-lg-2 col-sm-5 country-card ">
-                        <h4>{{__('home.country5')}}</h4>
+                    <div class="col-lg-2 col-sm-5 country-card ">
+                        <h4>{{ __('home.country5') }}</h4>
                     </div>
-                      <div class="col-lg-2 col-sm-5 country-card ">
-                        <h4>{{__('home.country6')}}</h4>
+                    <div class="col-lg-2 col-sm-5 country-card ">
+                        <h4>{{ __('home.country6') }}</h4>
                     </div>
-                      <div class="col-lg-2 col-sm-5 country-card ">
-                        <h4>{{__('home.country7')}}</h4>
+                    <div class="col-lg-2 col-sm-5 country-card ">
+                        <h4>{{ __('home.country7') }}</h4>
                     </div>
-                      <div class="col-lg-2 col-sm-5 country-card ">
-                        <h4>{{__('home.country8')}}</h4>
+                    <div class="col-lg-2 col-sm-5 country-card ">
+                        <h4>{{ __('home.country8') }}</h4>
                     </div>
                 </div>
-                <a class="default-btn" href="https://jordan.sae.edu/" target="_blank">{{__('home.link')}}</a>
+                <a class="another-btn"  href="https://jordan.sae.edu/" target="_blank">{{ __('home.link') }}</a>
             </div>
         </div>
     </div>
 </div>
 <!-- End country Area 3 -->
-<!-- Start Campus Area 2 -->
-        <div class="campus-area-2 ptb-100">
-            <div class="container-fluaid">
-                <div class="section-title section-title-2" data-aos="fade-up" data-aos-delay="100">
-                    <div class="sub-title">
-                        <p>{{__('home.studioTitle')}}</p>
-                    </div>
-                    <h2>{{__('home.studioP')}}</h2>
-                </div>
-
-                <div class="campus-slider owl-carousel owl-theme">
-                    <div class="campus-card" data-aos="fade-up" data-aos-delay="100">
-                        <img src="assets/img/all-img/campus-image-1.png" alt="image">
-                        <div class="content">
-                            <h2>Neve 88RS Studio</h2>
-                            <a class="default-btn" href="{{route('booking')}}">{{__('home.bookingButton')}}</a>
-                        </div>
-                    </div>
-                    <div class="campus-card" data-aos="fade-up" data-aos-delay="200">
-                        <img src="assets/img/all-img/campus-image-2.png" alt="image">
-                        <div class="content">
-                            <h2>O2R 2.0 Studio (Stereo)</h2>
-                            <a class="default-btn" href="{{route('booking')}}">{{__('home.bookingButton')}}</a>
-                        </div>
-                    </div>
-                    <div class="campus-card" data-aos="fade-up" data-aos-delay="300">
-                        <img src="assets/img/all-img/campus-image-3.png" alt="image">
-                        <div class="content">
-                            <h2>Apollo Studio</h2>
-                            <a class="default-btn" href="{{route('booking')}}">{{__('home.bookingButton')}}</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Campus Area -->
-
 @include('layout.footer')

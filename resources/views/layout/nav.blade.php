@@ -15,8 +15,8 @@
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg">
                 <a class="navbar-brand" href="#">
-                    <img class="logo-light" src="{{ asset('assets/images/logo.png') }}" alt="logo" width="200px ">
-                    <img class="logo-dark" src="{{ asset('assets/images/logo.png') }}" alt="logo" width="200px">
+                    <img class="logo-light" src="{{ asset('assets/images/logo.png') }}" alt="logo" width="125px ">
+                    <img class="logo-dark" src="{{ asset('assets/images/logo.png') }}" alt="logo" width="125px">
                 </a>
                 <a class="navbar-toggler" data-bs-toggle="offcanvas" href="#navbarOffcanvas" role="button"
                     aria-controls="navbarOffcanvas">
@@ -39,11 +39,11 @@
                                 Our Works
                             </a>
                         </li>
-                        <li class="nav-item">
+                        {{-- <li class="nav-item">
                             <a href="{{route('howWork')}}" class=" nav-link  ">
                                 How We Work
                             </a>
-                        </li>
+                        </li> --}}
                         <li class="nav-item">
                             <a href="{{route('why')}}" class=" nav-link  ">
                                 Why SAE
