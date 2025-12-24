@@ -108,7 +108,7 @@
                 </div>
 
                 <div class="accordion-item">
-                    <a href="{{route('booking')}}" class="accordion-link">Contact Us</a>
+                    <a href="{{route('contact')}}" class="accordion-link">Contact Us</a>
                 </div>
 
             </div>
