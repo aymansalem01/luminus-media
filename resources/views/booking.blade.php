@@ -210,7 +210,7 @@ input{
 <section class="hero-section position-relative d-flex align-items-center">
     <!-- Background -->
     <div class="hero-bg">
-        <img src="{{ asset('assets/images/equipment.png') }}" alt="Film Production Set">
+        <img src="{{asset('assets/images/booking.png')}}" alt="Film Production Set">
         <div class="overlay"></div>
     </div>
 
@@ -286,7 +286,7 @@ input{
         <div class="card-holder">
             <div class="card">
                 <div class="card-image">
-                    <img src="{{ asset('assets/img/all-img/about-image-2.png') }}" alt="">
+                    <img src="{{ asset('assets/images/neve_booking.png') }}" alt="">
                 </div>
                 <div class="card-body gap-4">
                     <div class="">
@@ -345,7 +345,7 @@ input{
             </div>
             <div class="card">
                 <div class="card-image">
-                    <img src="{{ asset('assets/img/all-img/about-image-2.png') }}" alt="">
+                    <img src="{{ asset('assets/images/o2r5.png')}}" alt="">
                 </div>
                 <div class="card-body gap-4">
                     <div class="">
@@ -432,7 +432,7 @@ input{
             </div>
             <div class="card">
                 <div class="card-image">
-                    <img src="{{ asset('assets/img/all-img/about-image-2.png') }}" alt="">
+                    <img src="{{ asset('assets/images/green.JPG') }}" alt="">
                 </div>
                 <div class="card-body gap-4">
                     <div class="">

@@ -4755,8 +4755,29 @@ Campus Tour Area CSS
     background-image: url(../img/all-img/campus-2.png);
 }
 
+.campus-tour .media_film {
+    background-image: url(../images/media_film.png);
+}
 .campus-tour .image.cp-bg-3 {
     background-image: url(../img/all-img/campus-3.png);
+}
+.campus-tour .image.capacity {
+    background-image: url(../images/capacity.png);
+}
+.campus-tour .image.tech {
+    background-image: url(../images/tech.png);
+}
+.campus-tour .image.partner {
+    background-image: url(../images/partner.png);
+}
+.campus-tour .image.commercial {
+    background-image: url(../images/commercial.png);
+}
+.campus-tour .image.tv_production{
+    background-image: url(../images/tv_production.png);
+}
+.campus-tour .image.cartoon{
+    background-image: url(../images/cartoon.png);
 }
 
 /*================================================

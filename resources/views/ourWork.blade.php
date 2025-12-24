@@ -55,12 +55,11 @@
         </h1>
 
         <p class="lead text-white mb-5 mx-auto" style="max-width: 700px;">
-            Luminus Film & Media executes TV production, animation, commercials,
-            and diverse visual content projects within a professional environment.
+            {{__('ourWork.first_paragraph')}}
         </p>
 
         <a href="#videos" class="heroSection-btn">
-            View Work
+            {{__('ourWork.view_button')}}
         </a>
     </div>
 </section>
@@ -71,27 +70,26 @@
         <div class="row g-0 align-items-center flex-column-reverse flex-lg-row">
             <div class="col-lg-6">
                 <div class="content" data-aos="fade-up" data-aos-delay="100">
-                    <h2>Television Production</h2>
-                    <p>We produce and execute television and media projects with various themes and styles, implemented
-                        according to approved technical standards by professional production teams.</p>
+                    <h2>{{__('ourWork.tv_production_header')}}</h2>
+                    <p>{{__('ourWork.tv_production_paragraph')}}</p>
                     <ul class="list-unstyled space-y-4">
                         <li class="d-flex align-items-start gap-3">
                             <i class="fa-regular fa-circle-check mt-1 main-color"></i>
-                            <span class="text-light">Educational and Cultural TV Programs</span>
+                            <span class="text-light">{{__('ourWork.tv_first')}}</span>
                         </li>
                         <li class="d-flex align-items-start gap-3">
                             <i class="fa-regular fa-circle-check text-gold mt-1 main-color"></i>
-                            <span class="text-light">Documentary and Media Content</span>
+                            <span class="text-light">{{__('ourWork.tv_second')}}</span>
                         </li>
                         <li class="d-flex align-items-start gap-3">
                             <i class="fa-regular fa-circle-check text-gold mt-1 main-color"></i>
-                            <span class="text-light">Digital Content for Global Platforms</span>
+                            <span class="text-light">{{__('ourWork.tv_third')}}</span>
                         </li>
                     </ul>
                 </div>
             </div>
             <div class="col-lg-6">
-                <div class="image cp-bg-1" data-aos="fade-zoom-in" data-aos-delay="100">
+                <div class="image tv_production" data-aos="fade-zoom-in" data-aos-delay="100">
                 </div>
             </div>
         </div>
@@ -99,29 +97,28 @@
         {{-- 2 --}}
         <div class="row g-0 align-items-center">
             <div class="col-lg-6">
-                <div class="image cp-bg-2" data-aos="fade-zoom-in" data-aos-delay="100">
+                <div class="image commercial" data-aos="fade-zoom-in" data-aos-delay="100">
                 </div>
             </div>
             <div class="col-lg-6">
                 <div class="content" data-aos="fade-up" data-aos-delay="100">
-                    <h2>Commercial & Corporate</h2>
-                    <p>Luminus Film & Media has executed advertising works and visual content for leading banks and
-                        corporate entities, respecting identity and professional quality standards.</p>
+                    <h2>{{__('ourWork.corporate_header')}}</h2>
+                    <p> {{__('ourWork.corporate_paragraph')}} </p>
                     <ul class="list-unstyled space-y-4">
                         <li class="d-flex align-items-start gap-3">
                             <i class="fa-regular fa-circle-check  mt-1 main-color"></i>
 
-                            <span class="text-light">TV Commercials and Digital Campaigns</span>
+                            <span class="text-light">{{__('ourWork.corporate_first')}}</span>
                         </li>
                         <li class="d-flex align-items-start gap-3">
                             <i class="fa-regular fa-circle-check  mt-1 main-color"></i>
 
-                            <span class="text-light">Corporate Identity and Service Videos</span>
+                            <span class="text-light">{{__('ourWork.corporate_second')}}</span>
                         </li>
                         <li class="d-flex align-items-start gap-3">
                             <i class="fa-regular fa-circle-check  mt-1 main-color"></i>
 
-                            <span class="text-light">Promotional and Branding Content</span>
+                            <span class="text-light">{{__('ourWork.corporate_third')}}</span>
                         </li>
                     </ul>
                 </div>
@@ -132,27 +129,26 @@
         <div class="row g-0 align-items-center flex-column-reverse flex-lg-row">
             <div class="col-lg-6">
                 <div class="content" data-aos="fade-up" data-aos-delay="100">
-                    <h2>Animation & Cartoon</h2>
-                    <p>We develop animation content targeted at different age groups, from concept development to full
-                        execution, with a special focus on educational storytelling.</p>
+                    <h2>{{__('ourWork.cartoon_header')}}</h2>
+                    <p>W{{__('ourWork.cartoon_paragraph')}}</p>
                     <ul class=" ">
                         <li class="d-flex align-items-start gap-3">
                             <i class="fa-regular fa-circle-check  mt-1 main-color"></i>
-                            <span class="text-light">Educational Animation Production</span>
+                            <span class="text-light">{{__('ourWork.cartoon_first')}}</span>
                         </li>
                         <li class="d-flex align-items-start gap-3">
                             <i class="fa-regular fa-circle-check  mt-1 main-color"></i>
-                            <span class="text-light">Cartoons for Children and Youth</span>
+                            <span class="text-light">{{__('ourWork.cartoon_second')}}</span>
                         </li>
                         <li class="d-flex align-items-start gap-3">
                             <i class="fa-regular fa-circle-check  mt-1 main-color"></i>
-                            <span class="text-light">Character Design and Conceptual Art</span>
+                            <span class="text-light">{{__('ourWork.cartoon_third')}}</span>
                         </li>
                     </ul>
                 </div>
             </div>
             <div class="col-lg-6">
-                <div class="image cp-bg-3" data-aos="fade-zoom-in" data-aos-delay="100">
+                <div class="image cartoon" data-aos="fade-zoom-in" data-aos-delay="100">
                 </div>
             </div>
         </div>

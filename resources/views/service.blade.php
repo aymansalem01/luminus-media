@@ -27,7 +27,6 @@
             </div>
             <div class="col-lg-6">
                 <div class="image creative" data-aos="fade-zoom-in" data-aos-delay="100">
-                    <img src=" {{ asset(asset('assets/images/creative.png')) }} " alt="">
                 </div>
             </div>
         </div>
@@ -35,7 +34,7 @@
         {{-- 2 --}}
         <div class="row g-0 align-items-center">
             <div class="col-lg-6">
-                <div class="image cp-bg-2" data-aos="fade-zoom-in" data-aos-delay="100">
+                <div class="image media_film" data-aos="fade-zoom-in" data-aos-delay="100">
                 </div>
             </div>
             <div class="col-lg-6">
@@ -55,7 +54,7 @@
                 </div>
             </div>
             <div class="col-lg-6">
-                <div class="image cp-bg-3" data-aos="fade-zoom-in" data-aos-delay="100">
+                <div class="image capacity" data-aos="fade-zoom-in" data-aos-delay="100">
                 </div>
             </div>
         </div>
@@ -63,7 +62,7 @@
         {{-- 4 --}}
         <div class="row g-0 align-items-center">
             <div class="col-lg-6">
-                <div class="image cp-bg-2" data-aos="fade-zoom-in" data-aos-delay="100">
+                <div class="image partner" data-aos="fade-zoom-in" data-aos-delay="100">
                 </div>
             </div>
             <div class="col-lg-6">
@@ -83,7 +82,7 @@
                 </div>
             </div>
             <div class="col-lg-6">
-                <div class="image cp-bg-3" data-aos="fade-zoom-in" data-aos-delay="100">
+                <div class="image tech" data-aos="fade-zoom-in" data-aos-delay="100">
                 </div>
             </div>
         </div>
