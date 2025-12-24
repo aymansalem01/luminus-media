@@ -358,7 +358,7 @@ a.white-under-btn {
     border-radius: 3px;
     height: 60px;
     padding-left: 15px;
-    color: var(--paragraphColor);
+    color: var(--whiteColor);
     font-size: 18px;
 }
 
@@ -370,6 +370,7 @@ a.white-under-btn {
 .form-control:focus{
     border: none;
     border-bottom: var(--mainColor) solid 2px;
+    color: white;
 }
 
 .form-control:-ms-input-placeholder {
@@ -5153,6 +5154,9 @@ Section Banner Area CSS
 
 .section-banner.bg-4 {
     background-image: url(../img/banner/section-image-4.png);
+}
+.section-banner.contact{
+        background-image: url(../images/contact.png);
 }
 
 .section-banner.bg-5 {

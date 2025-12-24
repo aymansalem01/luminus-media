@@ -168,40 +168,46 @@
 
         }
     }
+
     .bg-black {
-    background-color: #020202;
-}
+        background-color: #020202;
+    }
 
-.bg-dark {
-    background-color: #0a0a0a !important;
-}
+    .bg-dark {
+        background-color: #0a0a0a !important;
+    }
 
-.text-mainColor {
-    color: var(--mainColor);
-}
+    .text-mainColor {
+        color: var(--mainColor);
+    }
 
-.form-control,
-.form-select {
-    border-radius: 0.5rem;
-}
+    .form-control,
+    .form-select {
+        border-radius: 0.5rem;
+    }
 
-.form-control:focus,
-.form-select:focus {
-    border-color: var(--mainColor);
-    box-shadow: none;
-}
+    .form-control:focus,
+    .form-select:focus {
+        border-color: var(--mainColor);
+        box-shadow: none;
+    }
 
-.studio-option:hover {
-    border-color: var(--mainColor);
-    cursor: pointer;
-}
-option {
-    background-color: #0a0a0a;
-    color: #ffffff;
-    border: 1px solid #333;
-}
-input{
-    color: white
+    .studio-option:hover {
+        border-color: var(--mainColor);
+        cursor: pointer;
+    }
+
+    option {
+        background-color: #0a0a0a;
+        color: #ffffff;
+        border: 1px solid #333;
+    }
+
+    input {
+        color: white
+    }
+    input[type="date"] {
+    color-scheme: dark;
 }
 </style>
 </head>
@@ -210,7 +216,7 @@ input{
 <section class="hero-section position-relative d-flex align-items-center">
     <!-- Background -->
     <div class="hero-bg">
-        <img src="{{asset('assets/images/booking.png')}}" alt="Film Production Set">
+        <img src="{{ asset('assets/images/booking.png') }}" alt="Film Production Set">
         <div class="overlay"></div>
     </div>
 
@@ -345,7 +351,7 @@ input{
             </div>
             <div class="card">
                 <div class="card-image">
-                    <img src="{{ asset('assets/images/o2r5.png')}}" alt="">
+                    <img src="{{ asset('assets/images/o2r5.png') }}" alt="">
                 </div>
                 <div class="card-body gap-4">
                     <div class="">
@@ -479,144 +485,154 @@ input{
                     <div class="text-center mb-5">
                         <h2 class="fw-bold  mb-3 main-color">{{ __('form.booking') }}</h2>
                     </div>
-                    <form class="row g-4" id="book">
-
-                        <!-- Name -->
+                    <form class="row g-4" id="book" action="{{ route('post_booking') }}" method="post">
+                        @csrf
+                        {{-- NAME --}}
                         <div class="col-md-6">
                             <label class="form-label text-white">
                                 {{ __('form.full_name') }} <span class="text-mainColor">*</span>
                             </label>
-                            <input type="text" class="form-control  bg-transparent"
-                                placeholder="First and Last Name" required>
-                        </div>
+                            <input type="text"
+                                class="form-control bg-transparent @error('name') is-invalid @enderror" name="name"
+                                value="{{ old('name') }}" placeholder="First and Last Name">
 
-                        <!-- Entity -->
+                            @error('name')
+                                <small class="text-danger">{{ $message }}</small>
+                            @enderror
+                        </div>
+                        {{-- ENTITY --}}
                         <div class="col-md-6">
                             <label class="form-label text-white">
                                 {{ __('form.Entity') }} <span class="text-mainColor">*</span>
                             </label>
-                            <input type="text" class="form-control "
-                                placeholder="Company Name or Freelancer" required>
+                            <input type="text" class="form-control @error('entity') is-invalid @enderror"
+                                name="entity" value="{{ old('entity') }}" placeholder="Company Name or Freelancer">
+                            @error('entity')
+                                <small class="text-danger">{{ $message }}</small>
+                            @enderror
                         </div>
-
-                        <!-- Email -->
+                        {{-- EMAIL --}}
                         <div class="col-md-6">
                             <label class="form-label text-white">
                                 {{ __('form.email') }} <span class="text-mainColor">*</span>
                             </label>
-                            <input type="email" class="form-control  "
-                                placeholder="email@example.com" required>
+                            <input type="email" class="form-control @error('email') is-invalid @enderror"
+                                name="email" value="{{ old('email') }}" placeholder="email@example.com">
+                            @error('email')
+                                <small class="text-danger">{{ $message }}</small>
+                            @enderror
                         </div>
-
-                        <!-- Phone -->
+                        {{-- PHONE --}}
                         <div class="col-md-6">
                             <label class="form-label text-white">{{ __('form.phone') }}</label>
-                            <input type="tel" class="form-control "
-                                placeholder="+962 79 000 0000">
+                            <input type="tel" class="form-control @error('phone_number') is-invalid @enderror"
+                                name="phone_number" value="{{ old('phone_number') }}" placeholder="Start With 07">
+                            @error('phone_number')
+                                <small class="text-danger">{{ $message }}</small>
+                            @enderror
                         </div>
-
-                        <!-- Studio Type -->
+                        {{-- STUDIOS --}}
                         <div class="col-12">
                             <label class="form-label text-white mb-3">
                                 {{ __('form.studio') }} <span class="text-mainColor">*</span>
                             </label>
-
                             <div class="row g-3">
-                                <!-- Checkbox item -->
-                                <div class="col-6 col-md-4 test">
-                                    <label
-                                        class="w-100 border  rounded p-3 d-flex align-items-center gap-2 studio-option">
-                                        <input type="checkbox" class="form-check-input ">
-                                        <span class="text-light small">Neve 88RS</span>
-                                    </label>
-                                </div>
-
-                                <div class="col-6 col-md-4">
-                                    <label
+                                <div class="col-6 col-md-4"> <label
                                         class="w-100 border rounded p-3 d-flex align-items-center gap-2 studio-option">
-                                        <input type="checkbox" class="form-check-input ">
-                                        <span class="text-light small">O2R 2.0</span>
-                                    </label>
-                                </div>
-
-                                <div class="col-6 col-md-4 ">
-                                    <label
-                                        class="w-100 border  rounded p-3 d-flex align-items-center gap-2 studio-option">
-                                        <input type="checkbox" class="form-check-input ">
-                                        <span class="text-light small">O2R 5.1</span>
-                                    </label>
-                                </div>
-
-                                <div class="col-6 col-md-4">
-                                    <label
-                                        class="w-100 border  rounded p-3 d-flex align-items-center gap-2 studio-option">
-                                        <input type="checkbox" class="form-check-input ">
-                                        <span class="text-light small">Apollo</span>
-                                    </label>
-                                </div>
-
-                                <div class="col-6 col-md-4">
-                                    <label
-                                        class="w-100 border  rounded p-3 d-flex align-items-center gap-2 studio-option">
-                                        <input type="checkbox" class="form-check-input ">
-                                        <span class="text-light small">Podcast</span>
-                                    </label>
-                                </div>
-
-                                <div class="col-6 col-md-4">
-                                    <label
-                                        class="w-100 border  rounded p-3 d-flex align-items-center gap-2 studio-option">
-                                        <input type="checkbox" class="form-check-input ">
-                                        <span class="text-light small">Green / Blue Screen</span>
-                                    </label>
-                                </div>
+                                        <input type="checkbox" name="studios[]" value="Neve 88RS"
+                                            class="form-check-input"> <span class="text-light small">Neve 88RS</span>
+                                    </label> </div>
+                                <div class="col-6 col-md-4"> <label
+                                        class="w-100 border rounded p-3 d-flex align-items-center gap-2 studio-option">
+                                        <input type="checkbox" name="studios[]" value="O2R 2.0"
+                                            class="form-check-input"> <span class="text-light small">O2R 2.0</span>
+                                    </label> </div>
+                                <div class="col-6 col-md-4"> <label
+                                        class="w-100 border rounded p-3 d-flex align-items-center gap-2 studio-option">
+                                        <input type="checkbox" name="studios[]" value="O2R 5.1"
+                                            class="form-check-input"> <span class="text-light small">O2R 5.1</span>
+                                    </label> </div>
+                                <div class="col-6 col-md-4"> <label
+                                        class="w-100 border rounded p-3 d-flex align-items-center gap-2 studio-option">
+                                        <input type="checkbox" name="studios[]" value="Apollo"
+                                            class="form-check-input"> <span class="text-light small">Apollo</span>
+                                    </label> </div>
+                                <div class="col-6 col-md-4"> <label
+                                        class="w-100 border rounded p-3 d-flex align-items-center gap-2 studio-option">
+                                        <input type="checkbox" name="studios[]" value="Podcast"
+                                            class="form-check-input"> <span class="text-light small">Podcast</span>
+                                    </label> </div>
+                                <div class="col-6 col-md-4"> <label
+                                        class="w-100 border rounded p-3 d-flex align-items-center gap-2 studio-option">
+                                        <input type="checkbox" name="studios[]" value="Green / Blue Screen"
+                                            class="form-check-input"> <span class="text-light small">Green / Blue
+                                            Screen</span> </label> </div>
                             </div>
                         </div>
 
-                        <!-- Date -->
+                        {{-- START DATE --}}
                         <div class="col-md-6">
                             <label class="form-label text-white">
                                 {{ __('form.start_date') }} <span class="text-mainColor">*</span>
                             </label>
-                            <input type="date" class="form-control " required>
+                            <input type="date" class="form-control text-white @error('start_date') is-invalid @enderror"
+                                name="start_date" value="{{ old('start_date') }}">
+
+                            @error('start_date')
+                                <small class="text-danger">{{ $message }}</small>
+                            @enderror
                         </div>
 
-                        <!-- Duration -->
+                        {{-- DURATION --}}
                         <div class="col-md-6">
                             <label class="form-label text-white">
-                                {{ __('form.start_date') }} <span class="text-mainColor">*</span>
+                                {{ __('form.duration') }} <span class="text-mainColor">*</span>
                             </label>
-                            <input type="text" class="form-control "
-                                placeholder="e.g. 4 hours, 2 days..." required>
+                            <input type="text" class="form-control @error('duration') is-invalid @enderror"
+                                name="duration" value="{{ old('duration') }}" placeholder="e.g. 4 hours, 2 days">
+
+                            @error('duration')
+                                <small class="text-danger">{{ $message }}</small>
+                            @enderror
                         </div>
 
-                        <!-- Project Type -->
+                        {{-- PROJECT TYPE --}}
                         <div class="col-12">
                             <label class="form-label text-white">
                                 {{ __('form.project_type') }} <span class="text-mainColor">*</span>
                             </label>
-                            <select class="form-select bg-transparent text-white ">
-                                <option selected disabled>Select Project Type</option>
-                                <option>Music</option>
-                                <option>Podcast</option>
-                                <option>Film / Video</option>
-                                <option>Digital Content</option>
-                                <option>Other</option>
+                            <select
+                                class="form-select bg-transparent text-white @error('project_type') is-invalid @enderror"
+                                name="project_type">
+                                <option disabled selected>Select Project Type</option>
+                                @foreach (['music', 'podcast', 'film/video', 'digital content', 'other'] as $type)
+                                    <option value="{{ $type }}"
+                                        {{ old('project_type') == $type ? 'selected' : '' }}>
+                                        {{ ucfirst($type) }}
+                                    </option>
+                                @endforeach
                             </select>
+
+                            @error('project_type')
+                                <small class="text-danger">{{ $message }}</small>
+                            @enderror
                         </div>
 
-                        <!-- Notes -->
+                        {{-- NOTE --}}
                         <div class="col-12">
                             <label class="form-label text-white">{{ __('form.note') }}</label>
-                            <textarea rows="4" class="form-control "
-                                placeholder="Do you need a sound engineer? Specific equipment?"></textarea>
+                            <textarea rows="4" name="note" class="form-control @error('note') is-invalid @enderror"
+                                placeholder="Do you need a sound engineer? Specific equipment?">{{ old('note') }}</textarea>
+
+                            @error('note')
+                                <small class="text-danger">{{ $message }}</small>
+                            @enderror
                         </div>
 
-                        <!-- Submit -->
+                        {{-- SUBMIT --}}
                         <div class="col-12 pt-3">
                             <button type="submit"
-                                class=" w-100 py-3 fw-bold d-flex justify-content-center align-items-center gap-2 default-btn">
-
+                                class="w-100 py-3 fw-bold d-flex justify-content-center align-items-center gap-2 default-btn">
                                 {{ __('form.booking_button') }}
                             </button>
 
@@ -625,8 +641,8 @@ input{
                                 studio team.
                             </p>
                         </div>
-
                     </form>
+
                 </div>
 
             </div>

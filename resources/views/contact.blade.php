@@ -3,7 +3,7 @@
 @include('layout.nav')
 
 <!-- Start Section Banner Area -->
-<div class="section-banner bg-4">
+<div class="section-banner contact">
     <div class="container">
         <div class="banner-spacing">
 
