@@ -8,7 +8,7 @@
 <div class="banner-area-2 big-bg-2" id="home">
     <!-- Background Video -->
     <video autoplay muted loop playsinline class="bg-video">
-        <source src="{{ asset('assets/images/ltuc2.mp4') }}" type="video/mp4">
+        <source src="{{ asset('assets/images/ltuc.mp4') }}" type="video/mp4">
         Your browser does not support the video tag.
     </video>
 
@@ -16,7 +16,7 @@
         <div class="banner-content-2">
             <div class="content">
                 {{-- <span data-aos="fade-zoom-in" data-aos-delay="300">Global Leader in Creative & Technology </span> --}}
-                <h1 data-aos="fade-up" data-aos-delay="200">Luminus-SAE</h1>
+                <h1 data-aos="fade-up" data-aos-delay="200">SAE Amman</h1>
                 <p data-aos="fade-up" data-aos-delay="300">
                     {{ __('home.welcome') }}
                 </p>
