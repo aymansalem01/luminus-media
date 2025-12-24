@@ -252,37 +252,37 @@
 <div class="academics-area ptb-100">
     <div class="container">
         <div class="section-title" data-aos="fade-up" data-aos-delay="100">
-            <h2 class="title-anim">{{ __('service.howTitle') }}</h2>
+            <h2 class="title-anim">{{ __('home.howTitle') }}</h2>
         </div>
         <div class="row justify-content-center ">
             <div class="col-lg-4 col-sm-6 col-md-6 mt-md-4 ">
                 <div class="academics-item" data-aos="fade-up" data-aos-delay="100">
-                    <h4>{{ __('service.cardTitle1') }}</h4>
-                    <p>{{ __('service.cardP1') }}</p>
+                    <h4>{{ __('home.cardTitle1') }}</h4>
+                    <p>{{ __('home.cardP1') }}</p>
                 </div>
             </div>
             <div class="col-lg-4 col-sm-6 col-md-6 mt-md-4 ">
                 <div class="academics-item" data-aos="fade-up" data-aos-delay="200">
-                    <h4>{{ __('service.cardTitle2') }}</h4>
-                    <p>{{ __('service.cardP2') }}</p>
+                    <h4>{{ __('home.cardTitle2') }}</h4>
+                    <p>{{ __('home.cardP2') }}</p>
                 </div>
             </div>
             <div class="col-lg-4 col-sm-6 col-md-6  mt-md-4 ">
                 <div class="academics-item" data-aos="fade-up" data-aos-delay="300">
-                    <h4>{{ __('service.cardTitle3') }}</h4>
-                    <p>{{ __('service.cardP3') }}</p>
+                    <h4>{{ __('home.cardTitle3') }}</h4>
+                    <p>{{ __('home.cardP3') }}</p>
                 </div>
             </div>
             <div class="col-lg-4 col-sm-6 col-md-6 mt-lg-4 mt-md-4  ">
                 <div class="academics-item" data-aos="fade-up" data-aos-delay="300">
-                    <h4>{{ __('service.cardTitle4') }}</h4>
-                    <p>{{ __('service.cardP4') }}</p>
+                    <h4>{{ __('home.cardTitle4') }}</h4>
+                    <p>{{ __('home.cardP4') }}</p>
                 </div>
             </div>
             <div class="col-lg-4 col-sm-6 col-md-6 mt-lg-4  mt-md-4 ">
                 <div class="academics-item" data-aos="fade-up" data-aos-delay="300">
-                    <h4>{{ __('service.cardTitle5') }}</h4>
-                    <p>{{ __('service.cardP5') }}</p>
+                    <h4>{{ __('home.cardTitle5') }}</h4>
+                    <p>{{ __('home.cardP5') }}</p>
                 </div>
             </div>
         </div>

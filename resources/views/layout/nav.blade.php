@@ -44,11 +44,11 @@
                                 How We Work
                             </a>
                         </li> --}}
-                        <li class="nav-item">
+                        {{-- <li class="nav-item">
                             <a href="{{route('why')}}" class=" nav-link  ">
                                 Why SAE
                             </a>
-                        </li>
+                        </li> --}}
                         <li class="nav-item">
                             <a href="{{route('booking')}}" class=" nav-link  ">
                                 Booking Studio
@@ -95,13 +95,13 @@
                     <a href="{{route('ourWork')}}" class="accordion-link">Our Works</a>
                 </div>
 
-                <div class="accordion-item">
+                {{-- <div class="accordion-item">
                     <a href="{{route('howWork')}}" class="accordion-link">How We Work</a>
-                </div>
+                </div> --}}
 
-                <div class="accordion-item">
+                {{-- <div class="accordion-item">
                     <a href="{{route('why')}}" class="accordion-link">Why SAE</a>
-                </div>
+                </div> --}}
 
                 <div class="accordion-item">
                     <a href="{{route('booking')}}" class="accordion-link">Booking Studio</a>

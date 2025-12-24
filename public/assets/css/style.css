@@ -351,12 +351,10 @@ a.white-under-btn {
 /*form-control*/
 .form-control {
     border-radius: 0;
-    background-color: #f5f5f5 !important;
+    background-color: transparent !important;
     -webkit-box-shadow: unset !important;
     box-shadow: unset !important;
-    -webkit-transition: var(--transition);
-    transition: var(--transition);
-    border: none !important;
+
     border-radius: 3px;
     height: 60px;
     padding-left: 15px;
@@ -368,6 +366,10 @@ a.white-under-btn {
     color: var(--placeholderColor);
     -webkit-transition: var(--transition);
     transition: var(--transition);
+}
+.form-control:focus{
+    border: none;
+    border-bottom: var(--mainColor) solid 2px;
 }
 
 .form-control:-ms-input-placeholder {
@@ -408,6 +410,8 @@ textarea.form-control {
     padding-top: 15px;
     height: auto;
 }
+
+
 
 /*================================================
 Top Navbar Area CSS
@@ -5739,22 +5743,22 @@ Go Top CSS
 
 .preloader-dot:nth-child(1) {
     animation-delay: 0.1s;
-    background: #e2d5d5;
+    background: #000000;
 }
 
 .preloader-dot:nth-child(2) {
     animation-delay: 0.2s;
-    background: #d3c2d2;
+    background: #888376;
 }
 
 .preloader-dot:nth-child(3) {
     animation-delay: 0.3s;
-    background: #b87aae;
+    background: #bba87d;
 }
 
 .preloader-dot:nth-child(4) {
     animation-delay: 0.4s;
-    background: #a73493;
+    background: #C6A75E;
 }
 
 .preloader-dot:nth-child(5) {

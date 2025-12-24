@@ -162,47 +162,37 @@
 
 {{-- Test section  --}}
 <div class="col-lg-12 container pt-5">
-    <h2 class="scope-heder">Scope of Work and Partnerships</h2>
+    <h2 class="scope-heder">{{ __('service.scope') }}</h2>
     <div class="ac-overview">
         <div class="pera-dec">
             <div class="faq-content-2">
                 <div class="faq-item">
-                    <div class="faq-question">Regional Reach and Operations</div>
+                    <div class="faq-question">{{ __('service.header1') }}</div>
                     <div class="icon-container"><i class="bx bx-chevron-down"></i></div>
                 </div>
                 <div class="faq-answer">
-                    <p> Luminus Film and Media operates in Jordan, with a broad regional reach extending across the
-                        Middle East and North Africa (MENA). We function through educational, production, and technical
-                        partnerships, executed via collaboration models grounded in active operations and knowledge
-                        exchange.</p>
+                    <p> {{__('service.paragraph1')}}</p>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question">Collaborative Strategy</div>
+                    <div class="faq-question">{{ __('service.header2') }}</div>
                     <div class="icon-container"><i class="bx bx-chevron-down"></i></div>
                 </div>
                 <div class="faq-answer">
-                    <p> Our partnerships rely on close collaboration with local and regional institutions. This approach
-                        ensures that programs and projects are aligned with local contexts while adhering to accredited
-                        academic and operational standards.</p>
+                    <p> {{__('service.paragraph2')}}</p>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question">Partnership Activities and Expansion</div>
+                    <div class="faq-question">{{ __('service.header3') }}</div>
                     <div class="icon-container"><i class="bx bx-chevron-down"></i></div>
                 </div>
                 <div class="faq-answer">
-                    <p> These collaborations encompass the execution of educational programs, production projects, and
-                        capacity building initiatives. Additionally, we focus on developing and operating SAE branches
-                        across the region through joint venture or licensing models, ensuring added value and long-term
-                        sustainability.</p>
+                    <p> {{__('service.paragraph3')}}</p>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question">Institutional Integration</div>
+                    <div class="faq-question">{{ __('service.header4') }}</div>
                     <div class="icon-container"><i class="bx bx-chevron-down"></i></div>
                 </div>
                 <div class="faq-answer">
-                    <p> Our operations are deeply connected to the global SAE network and work in integration with
-                        Luminus Technical University College (LTUC) to deliver academic and applied programs within the
-                        technical and creative industries.</p>
+                    <p> {{__('service.paragraph4')}}</p>
                 </div>
             </div>
         </div>
@@ -214,11 +204,11 @@
     <div class="container">
         <div class="d-flex flex-column justify-between text-center gap-3">
             <div>
-                <h2 style="color: white" >Academic Programs Portal</h2>
+                <h2 style="color: white" >{{ __('service.academic') }}</h2>
             </div>
             <div>
                 <p style="color: white">
-                    For those interested in exploring our accredited academic programs in Jordan, please visit the official
+                    {{ __('service.academicP') }}
                 </p>
             </div>
             <div><a class=" default-btn  " style="border: var(--mainColor) solid 2px ">  SAE Institute – Amman</a> </div>

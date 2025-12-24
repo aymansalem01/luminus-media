@@ -68,6 +68,23 @@
         text-align: start
     }
 
+    @media screen and (max-width:900px) {
+        .in-studio .card-holder {
+            flex-wrap: wrap;
+            justify-content: center
+        }
+
+        .in-studio .card-holder .card {
+            width: 48%;
+        }
+
+        .in-studio .header span {
+            border: none
+        }
+    }
+
+
+
     .in-studio .card-holder .card:hover {
         border-color: var(--mainColor)
     }
@@ -135,6 +152,56 @@
         flex-direction: column;
 
     }
+
+    @media screen and (max-width:800px) {
+        .studios .card-holder {
+            justify-content: center
+        }
+
+        .studios .card-holder .card {
+            width: 80%
+        }
+
+        .studios .card-holder .card .card-body {
+            flex-direction: column;
+
+        }
+    }
+    .bg-black {
+    background-color: #020202;
+}
+
+.bg-dark {
+    background-color: #0a0a0a !important;
+}
+
+.text-mainColor {
+    color: var(--mainColor);
+}
+
+.form-control,
+.form-select {
+    border-radius: 0.5rem;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--mainColor);
+    box-shadow: none;
+}
+
+.studio-option:hover {
+    border-color: var(--mainColor);
+    cursor: pointer;
+}
+option {
+    background-color: #0a0a0a;
+    color: #ffffff;
+    border: 1px solid #333;
+}
+input{
+    color: white
+}
 </style>
 </head>
 @include('layout.nav')
@@ -160,7 +227,7 @@
             and diverse visual content projects within a professional environment.
         </p>
 
-        <a href="#portfolio" class="heroSection-btn">
+        <a href="#book" class="heroSection-btn">
             Book a Studio Now
         </a>
     </div>
@@ -285,7 +352,7 @@
                         <p>The main recording room for recording, mixing, and mastering, designed for high-end musical
                             and commercial productions.</p>
                     </div>
-                    <div class="d-flex justify-content-around  text-white border-top pt-4">
+                    <div class="d-flex justify-content-around  text-white border-top pt-4 flex-sm-column ">
                         <div class="">
                             <h6>Suitable for:</h6>
                             <ul>
@@ -401,6 +468,173 @@
     </div>
 
 
+</section>
+{{-- end studios section --}}
+<hr style="border-color: var(--blackColor); border-width: 5px; ">
+
+{{-- booking Form  --}}
+<section id="booking" class="py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="bg-dark border border-secondary rounded-4 p-4 p-md-5 shadow-lg">
+                    <!-- Header -->
+                    <div class="text-center mb-5">
+                        <h2 class="fw-bold  mb-3 main-color">{{ __('form.booking') }}</h2>
+                    </div>
+                    <form class="row g-4" id="book">
+
+                        <!-- Name -->
+                        <div class="col-md-6">
+                            <label class="form-label text-white">
+                                {{ __('form.full_name') }} <span class="text-mainColor">*</span>
+                            </label>
+                            <input type="text" class="form-control  bg-transparent"
+                                placeholder="First and Last Name" required>
+                        </div>
+
+                        <!-- Entity -->
+                        <div class="col-md-6">
+                            <label class="form-label text-white">
+                                {{ __('form.Entity') }} <span class="text-mainColor">*</span>
+                            </label>
+                            <input type="text" class="form-control "
+                                placeholder="Company Name or Freelancer" required>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="col-md-6">
+                            <label class="form-label text-white">
+                                {{ __('form.email') }} <span class="text-mainColor">*</span>
+                            </label>
+                            <input type="email" class="form-control  "
+                                placeholder="email@example.com" required>
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="col-md-6">
+                            <label class="form-label text-white">{{ __('form.phone') }}</label>
+                            <input type="tel" class="form-control "
+                                placeholder="+962 79 000 0000">
+                        </div>
+
+                        <!-- Studio Type -->
+                        <div class="col-12">
+                            <label class="form-label text-white mb-3">
+                                {{ __('form.studio') }} <span class="text-mainColor">*</span>
+                            </label>
+
+                            <div class="row g-3">
+                                <!-- Checkbox item -->
+                                <div class="col-6 col-md-4 test">
+                                    <label
+                                        class="w-100 border  rounded p-3 d-flex align-items-center gap-2 studio-option">
+                                        <input type="checkbox" class="form-check-input ">
+                                        <span class="text-light small">Neve 88RS</span>
+                                    </label>
+                                </div>
+
+                                <div class="col-6 col-md-4">
+                                    <label
+                                        class="w-100 border rounded p-3 d-flex align-items-center gap-2 studio-option">
+                                        <input type="checkbox" class="form-check-input ">
+                                        <span class="text-light small">O2R 2.0</span>
+                                    </label>
+                                </div>
+
+                                <div class="col-6 col-md-4 ">
+                                    <label
+                                        class="w-100 border  rounded p-3 d-flex align-items-center gap-2 studio-option">
+                                        <input type="checkbox" class="form-check-input ">
+                                        <span class="text-light small">O2R 5.1</span>
+                                    </label>
+                                </div>
+
+                                <div class="col-6 col-md-4">
+                                    <label
+                                        class="w-100 border  rounded p-3 d-flex align-items-center gap-2 studio-option">
+                                        <input type="checkbox" class="form-check-input ">
+                                        <span class="text-light small">Apollo</span>
+                                    </label>
+                                </div>
+
+                                <div class="col-6 col-md-4">
+                                    <label
+                                        class="w-100 border  rounded p-3 d-flex align-items-center gap-2 studio-option">
+                                        <input type="checkbox" class="form-check-input ">
+                                        <span class="text-light small">Podcast</span>
+                                    </label>
+                                </div>
+
+                                <div class="col-6 col-md-4">
+                                    <label
+                                        class="w-100 border  rounded p-3 d-flex align-items-center gap-2 studio-option">
+                                        <input type="checkbox" class="form-check-input ">
+                                        <span class="text-light small">Green / Blue Screen</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Date -->
+                        <div class="col-md-6">
+                            <label class="form-label text-white">
+                                {{ __('form.start_date') }} <span class="text-mainColor">*</span>
+                            </label>
+                            <input type="date" class="form-control " required>
+                        </div>
+
+                        <!-- Duration -->
+                        <div class="col-md-6">
+                            <label class="form-label text-white">
+                                {{ __('form.start_date') }} <span class="text-mainColor">*</span>
+                            </label>
+                            <input type="text" class="form-control "
+                                placeholder="e.g. 4 hours, 2 days..." required>
+                        </div>
+
+                        <!-- Project Type -->
+                        <div class="col-12">
+                            <label class="form-label text-white">
+                                {{ __('form.project_type') }} <span class="text-mainColor">*</span>
+                            </label>
+                            <select class="form-select bg-transparent text-white ">
+                                <option selected disabled>Select Project Type</option>
+                                <option>Music</option>
+                                <option>Podcast</option>
+                                <option>Film / Video</option>
+                                <option>Digital Content</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+
+                        <!-- Notes -->
+                        <div class="col-12">
+                            <label class="form-label text-white">{{ __('form.note') }}</label>
+                            <textarea rows="4" class="form-control "
+                                placeholder="Do you need a sound engineer? Specific equipment?"></textarea>
+                        </div>
+
+                        <!-- Submit -->
+                        <div class="col-12 pt-3">
+                            <button type="submit"
+                                class=" w-100 py-3 fw-bold d-flex justify-content-center align-items-center gap-2 default-btn">
+
+                                {{ __('form.booking_button') }}
+                            </button>
+
+                            <p class="text-muted small mt-3 text-center">
+                                All bookings are subject to availability and scheduling, confirmed officially by the
+                                studio team.
+                            </p>
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
 </section>
 
 @include('layout.footer')

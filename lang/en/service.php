@@ -1,5 +1,5 @@
 <?php
-return[
+return [
     "title" => "What We Offer",
     "subTitle" => "Luminus Film and Media provides integrated educational, production, and operational services within a model that combines applied education, media and film production, capacity building, and technology, catering to the needs of individuals and institutions in the technical and creative industries.",
 
@@ -18,23 +18,27 @@ return[
     "serviceTitle5" => "Technology and Digital Integration",
     "Service5" => "We leverage modern technologies and digital solutions by integrating tools and platforms to support education, production, and capacity building. This enhances execution efficiency and ensures we keep pace with the evolution of the creative and technical industries.",
 
-    "howTitle"=> "How We Work",
-    "cardTitle1" => "Integrated Operational Model",
-    "cardP1" => "Luminus Film and Media utilizes an integrated operational model grounded in the practical linkage of education, production, and capacity building. This operates within a unified ecosystem managed by clear, actionable professional standards.",
-
-    "cardTitle2" => "Applied Methodology",
-    "cardP2" => "We design and execute programs and projects using an applied methodology, merging practical learning with real-world production environments. This enables participants to gain realistic experience directly relevant to professional contexts.",
-
-    "cardTitle3" => "Operational Flexibility & Expertise",
-    "cardP3" => "Our operations are driven by multidisciplinary teams under expert professional and technical supervision. We utilize flexible operational models that allow us to adapt programs and projects to meet partner needs and specific local or regional contexts.",
-
-    "cardTitle4" => "Impact-Driven Partnerships",
-    "cardP4" => "We rely on executive partnerships built on active collaboration to ensure output quality and sustainable impact across our educational programs, production projects, and capacity building initiatives.",
-
-    "cardTitle5" => "Regional SAE Expansion",
-    "cardP5" => "As part of our scope, we develop and operate SAE branches across the region through joint venture or licensing models. Working with local and regional partners, we ensure strict adherence to the accredited academic and operational standards of SAE Global.",
-
-
+    "scope" => "Scope of Work and Partnerships",
+    "header1" => "Regional Reach and Operations",
+    "paragraph1" => "Luminus Film and Media operates in Jordan, with a broad regional reach extending across the
+                        Middle East and North Africa (MENA). We function through educational, production, and technical
+                        partnerships, executed via collaboration models grounded in active operations and knowledge
+                        exchange.",
+    "header2" => "Collaborative Strategy",
+    "paragraph2" => "Our partnerships rely on close collaboration with local and regional institutions. This approach
+                        ensures that programs and projects are aligned with local contexts while adhering to accredited
+                        academic and operational standards.",
+    "header3" => "Partnership Activities and Expansion",
+    "paragraph3" => "These collaborations encompass the execution of educational programs, production projects, and
+                        capacity building initiatives. Additionally, we focus on developing and operating SAE branches
+                        across the region through joint venture or licensing models, ensuring added value and long-term
+                        sustainability.",
+    "header4" => "Institutional Integration",
+    "paragraph4" => "Our operations are deeply connected to the global SAE network and work in integration with
+                        Luminus Technical University College (LTUC) to deliver academic and applied programs within the
+                        technical and creative industries.",
+    "academic" => "Academic Programs Portal",
+    "academicP" => "For those interested in exploring our accredited academic programs in Jordan, please visit the official",
 
 
 

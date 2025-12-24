@@ -30,7 +30,7 @@
                             <div class="row">
                                 <div class="col-lg-6 col-md-6">
                                     <div class="form-group">
-                                        <label for="name">First Name</label>
+                                        <label for="name">{{ __('form.first_name') }}</label>
                                         <input type="text" name="name" class="form-control" id="name"
                                             required data-error="Please enter your name" placeholder="">
                                         <div class="help-block with-errors"></div>
@@ -39,7 +39,7 @@
 
                                 <div class="col-lg-6 col-md-6">
                                     <div class="form-group">
-                                        <label for="name">Last Name</label>
+                                        <label for="name">{{ __('form.last_name') }}</label>
                                         <input type="text" name="name" class="form-control" id="name2"
                                             required data-error="Please enter your name" placeholder="">
                                         <div class="help-block with-errors"></div>
@@ -48,7 +48,7 @@
 
                                 <div class="col-lg-6 col-md-6">
                                     <div class="form-group">
-                                        <label for="name">Email</label>
+                                        <label for="name">{{ __('form.email') }}</label>
                                         <input type="email" name="email" class="form-control" id="email"
                                             required data-error="Please enter your email" placeholder="">
                                         <div class="help-block with-errors"></div>
@@ -57,7 +57,7 @@
 
                                 <div class="col-lg-6 col-md-6">
                                     <div class="form-group">
-                                        <label for="name">Phone</label>
+                                        <label for="name">{{ __('form.phone') }}</label>
                                         <input type="text" name="phone_number" class="form-control" id="phone_number"
                                             required data-error="Please enter your phone number" placeholder="">
                                         <div class="help-block with-errors"></div>
@@ -78,7 +78,7 @@
 
                                 <div class="col-lg-12 col-md-12">
                                     <div class="form-group">
-                                        <label for="name">Message</label>
+                                        <label for="name">{{ __('form.massage') }}</label>
                                         <textarea name="message" id="message" class="form-control" cols="30" rows="6" required
                                             data-error="Please enter your message" placeholder=""></textarea>
                                         <div class="help-block with-errors"></div>
@@ -86,7 +86,7 @@
                                 </div>
 
                                 <div class="col-lg-12 col-md-12">
-                                    <button type="submit" class="default-btn">Submit Now</button>
+                                    <button type="submit" class="default-btn">{{ __('form.contact_button') }}</button>
                                     <div id="msgSubmit" class="h3 text-center hidden"></div>
                                     <div class="clearfix"></div>
                                 </div>

@@ -27,8 +27,24 @@ return [
     "country6" => "Libya",
     "country7" => "Tunisia",
     "country8" => "Morocco",
-    "link"=> "Visit SAE Institute - Amman",
-    "studioTitle"=> "Studio & Facilities",
-    "studioP"=> "SAE Institute Amman Studios – Supervised and Operated by Luminus Film and Media",
-    "bookingButton"=> "Discover All",
+    "link" => "Visit SAE Institute - Amman",
+    "studioTitle" => "Studio & Facilities",
+    "studioP" => "SAE Institute Amman Studios – Supervised and Operated by Luminus Film and Media",
+    "bookingButton" => "Discover All",
+    "howTitle" => "How We Work",
+    "cardTitle1" => "Integrated Operational Model",
+    "cardP1" => "Luminus Film and Media utilizes an integrated operational model grounded in the practical linkage of education, production, and capacity building. This operates within a unified ecosystem managed by clear, actionable professional standards.",
+
+    "cardTitle2" => "Applied Methodology",
+    "cardP2" => "We design and execute programs and projects using an applied methodology, merging practical learning with real-world production environments. This enables participants to gain realistic experience directly relevant to professional contexts.",
+
+    "cardTitle3" => "Operational Flexibility & Expertise",
+    "cardP3" => "Our operations are driven by multidisciplinary teams under expert professional and technical supervision. We utilize flexible operational models that allow us to adapt programs and projects to meet partner needs and specific local or regional contexts.",
+
+    "cardTitle4" => "Impact-Driven Partnerships",
+    "cardP4" => "We rely on executive partnerships built on active collaboration to ensure output quality and sustainable impact across our educational programs, production projects, and capacity building initiatives.",
+
+    "cardTitle5" => "Regional SAE Expansion",
+    "cardP5" => "As part of our scope, we develop and operate SAE branches across the region through joint venture or licensing models. Working with local and regional partners, we ensure strict adherence to the accredited academic and operational standards of SAE Global.",
+
 ];
