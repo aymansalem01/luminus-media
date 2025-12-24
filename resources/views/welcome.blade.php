@@ -108,7 +108,7 @@
 
             <div class="col-lg-6">
                 <div class="image" data-aos="fade-zoom-in" data-aos-delay="100">
-                    <img src="assets/img/all-img/Success-video-image.png" alt="image">
+                    <img src="{{ asset('assets/images/who_we.png') }}" alt="image">
                 </div>
             </div>
         </div>
@@ -188,23 +188,23 @@
 
         <div class="campus-slider owl-carousel owl-theme">
             <div class="campus-card" data-aos="fade-up" data-aos-delay="100">
-                <img src="assets/img/all-img/campus-image-1.png" alt="image">
+                <img src="{{ asset('assets/images/neve.png') }}" alt="image" >
                 <div class="content">
                     <h2>Neve 88RS Studio</h2>
                     <a class="default-btn" href="{{ route('booking') }}">{{ __('home.bookingButton') }}</a>
                 </div>
             </div>
             <div class="campus-card" data-aos="fade-up" data-aos-delay="200">
-                <img src="assets/img/all-img/campus-image-2.png" alt="image">
+                <img src="{{ asset('assets/images/o2r.png') }}" alt="image">
                 <div class="content">
                     <h2>O2R 2.0 Studio (Stereo)</h2>
                     <a class="default-btn" href="{{ route('booking') }}">{{ __('home.bookingButton') }}</a>
                 </div>
             </div>
             <div class="campus-card" data-aos="fade-up" data-aos-delay="300">
-                <img src="assets/img/all-img/campus-image-3.png" alt="image">
+                <img src="{{ asset ('assets/images/green.JPG') }}" alt="image">
                 <div class="content">
-                    <h2>Apollo Studio</h2>
+                    <h2>Green Screen Studio</h2>
                     <a class="default-btn" href="{{ route('booking') }}">{{ __('home.bookingButton') }}</a>
                 </div>
             </div>

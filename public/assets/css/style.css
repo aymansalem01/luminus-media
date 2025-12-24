@@ -4683,9 +4683,13 @@ Campus Area 2 CSS
     background-color: rgba(0, 0, 0, .1);
     border-radius: 25px;
     padding: 10px;
+    color: white;
     font-size: 40px;
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 30px;
+}
+.campus-card img{
+    max-height: 500px;
 }
 
 /*================================================
@@ -4744,6 +4748,9 @@ Campus Tour Area CSS
     background-image: url(../img/all-img/campus-1.png);
 }
 
+.campus-tour .creative {
+    background-image: url(../images/creative.png);
+}
 .campus-tour .image.cp-bg-2 {
     background-image: url(../img/all-img/campus-2.png);
 }

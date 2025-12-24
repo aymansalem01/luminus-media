@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\SubmitController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -11,3 +12,4 @@ Route::view('/howWork','howWork')->name('howWork');
 Route::view('/service','service')->name('service');
 Route::view('/WhySAE','why')->name('why');
 Route::view('/ourWorks','ourWork')->name('ourWork');
+Route::post('/contact',[SubmitController::class,'contact'])->name('post_contact');

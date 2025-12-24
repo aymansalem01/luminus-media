@@ -26,13 +26,14 @@
                     </div>
 
                     <div class="contact-form">
-                        <form id="contactForm">
+                        <form id="contactForm" action="{{ route('post_contact') }}" method="post" >
+                            @csrf
                             <div class="row">
                                 <div class="col-lg-6 col-md-6">
                                     <div class="form-group">
                                         <label for="name">{{ __('form.first_name') }}</label>
-                                        <input type="text" name="name" class="form-control" id="name"
-                                            required data-error="Please enter your name" placeholder="">
+                                        <input type="text" name="f_name" class="form-control" id="name"
+                                            required data-error="Please enter your name" placeholder="First Name">
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
@@ -40,8 +41,8 @@
                                 <div class="col-lg-6 col-md-6">
                                     <div class="form-group">
                                         <label for="name">{{ __('form.last_name') }}</label>
-                                        <input type="text" name="name" class="form-control" id="name2"
-                                            required data-error="Please enter your name" placeholder="">
+                                        <input type="text" name="l_name" class="form-control" id="name2"
+                                            required data-error="Please enter your name" placeholder="Last Name">
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
@@ -50,7 +51,7 @@
                                     <div class="form-group">
                                         <label for="name">{{ __('form.email') }}</label>
                                         <input type="email" name="email" class="form-control" id="email"
-                                            required data-error="Please enter your email" placeholder="">
+                                            required data-error="Please enter your email" placeholder="example@example.com">
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
@@ -59,7 +60,7 @@
                                     <div class="form-group">
                                         <label for="name">{{ __('form.phone') }}</label>
                                         <input type="text" name="phone_number" class="form-control" id="phone_number"
-                                            required data-error="Please enter your phone number" placeholder="">
+                                            required data-error="Please enter your phone number" placeholder="start with 07">
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>

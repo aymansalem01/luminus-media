@@ -150,6 +150,7 @@
         padding: 30px;
         display: flex;
         flex-direction: column;
+        align-content: space-between;
 
     }
 
@@ -293,7 +294,7 @@ input{
                         <p>The main recording room for recording, mixing, and mastering, designed for high-end musical
                             and commercial productions.</p>
                     </div>
-                    <div class="d-flex justify-content-around  text-white border-top pt-4">
+                    <div class="d-flex justify-content-between  text-white border-top pt-4">
                         <div class="">
                             <h6>Suitable for:</h6>
                             <ul>
@@ -315,7 +316,7 @@ input{
             </div>
             <div class="card">
                 <div class="card-image">
-                    <img src="{{ asset('assets/img/all-img/about-image-2.png') }}" alt="">
+                    <img src="{{ asset('assets/images/o2r.png') }}" alt="">
                 </div>
                 <div class="card-body gap-4">
                     <div class="">
@@ -323,7 +324,7 @@ input{
                         <p>Flexible studio for recording, mixing, mastering, and stereo post-production.
                         </p>
                     </div>
-                    <div class="d-flex justify-content-around  text-white border-top pt-4">
+                    <div class="d-flex justify-content-between  text-white border-top pt-4">
                         <div class="">
                             <h6>Suitable for:</h6>
                             <ul>
@@ -348,11 +349,10 @@ input{
                 </div>
                 <div class="card-body gap-4">
                     <div class="">
-                        <h3>Neve 88RS Studio</h3>
-                        <p>The main recording room for recording, mixing, and mastering, designed for high-end musical
-                            and commercial productions.</p>
+                        <h3>O2R 5.1 Studio (Surround)</h3>
+                        <p>Dedicated studio for surround sound work and post-production for film and TV.</p>
                     </div>
-                    <div class="d-flex justify-content-around  text-white border-top pt-4 flex-sm-column ">
+                    <div class="d-flex justify-content-between  text-white border-top pt-4 ">
                         <div class="">
                             <h6>Suitable for:</h6>
                             <ul>
@@ -378,11 +378,10 @@ input{
                 </div>
                 <div class="card-body gap-4">
                     <div class="">
-                        <h3>Neve 88RS Studio</h3>
-                        <p>The main recording room for recording, mixing, and mastering, designed for high-end musical
-                            and commercial productions.</p>
+                        <h3>Apollo Studio</h3>
+                        <p>Compact and efficient studio for pre-production and light production tasks.</p>
                     </div>
-                    <div class="d-flex justify-content-around  text-white border-top pt-4">
+                    <div class="d-flex justify-content-between  text-white border-top pt-4">
                         <div class="">
                             <h6>Suitable for:</h6>
                             <ul>
@@ -408,11 +407,10 @@ input{
                 </div>
                 <div class="card-body gap-4">
                     <div class="">
-                        <h3>Neve 88RS Studio</h3>
-                        <p>The main recording room for recording, mixing, and mastering, designed for high-end musical
-                            and commercial productions.</p>
+                        <h3>Podcast Studio</h3>
+                        <p>Dedicated space for producing podcasts, talk shows, and educational content.</p>
                     </div>
-                    <div class="d-flex justify-content-around  text-white border-top pt-4">
+                    <div class="d-flex justify-content-between  text-white border-top pt-4">
                         <div class="">
                             <h6>Suitable for:</h6>
                             <ul>
@@ -438,11 +436,10 @@ input{
                 </div>
                 <div class="card-body gap-4">
                     <div class="">
-                        <h3>Neve 88RS Studio</h3>
-                        <p>The main recording room for recording, mixing, and mastering, designed for high-end musical
-                            and commercial productions.</p>
+                        <h3>Green & Blue Screen Studios</h3>
+                        <p>Chroma Key studios for controlled and precise filming.</p>
                     </div>
-                    <div class="d-flex justify-content-around  text-white border-top pt-4">
+                    <div class="d-flex justify-content-between  text-white border-top pt-4">
                         <div class="">
                             <h6>Suitable for:</h6>
                             <ul>

@@ -26,7 +26,8 @@
                 </div>
             </div>
             <div class="col-lg-6">
-                <div class="image cp-bg-1" data-aos="fade-zoom-in" data-aos-delay="100">
+                <div class="image creative" data-aos="fade-zoom-in" data-aos-delay="100">
+                    <img src=" {{ asset(asset('assets/images/creative.png')) }} " alt="">
                 </div>
             </div>
         </div>
