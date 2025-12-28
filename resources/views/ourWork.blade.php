@@ -51,7 +51,7 @@
 
 
         <h1 class="display-1 fw-bold mb-4 text-white">
-            Our Work in <span class="main-color">Production</span>
+            {{ __('ourWork.title') }}<span class="main-color">{{ __('ourWork.span') }}</span>
         </h1>
 
         <p class="lead text-white mb-5 mx-auto" style="max-width: 700px;">
@@ -165,48 +165,48 @@
         <div class="row justify-content-center gap-4">
             <div class="col-lg-4 col-sm-6 col-md-6">
                 <div class="academics-item" data-aos="fade-up" data-aos-delay="100">
-                    <h4>Model & Execution</h4>
-                    <p>Flexible production models tailored for excellence:</p>
+                    <h4>{{ __('ourWork.cardHeader1') }}</h4>
+                    <p>{{ __('ourWork.cardP1') }}</p>
                     <div class="d-flex flex-column gap-3 ">
                         <div class=" second-color p-3 radius mt-1 ">
-                            <p class="m-auto">Independent Production</p>
+                            <p class="m-auto">{{ __('ourWork.cardLi1') }}</p>
                         </div>
                         <div class=" second-color p-3 radius ">
-                            <p class="m-auto">Executive Partnerships</p>
+                            <p class="m-auto">{{ __('ourWork.cardLi2') }}</p>
                         </div>
                         <div class=" second-color p-3 radius ">
-                            <p class="m-auto">Joint Ventures & Institutional Support</p>
+                            <p class="m-auto">{{ __('ourWork.cardLi3') }}</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-sm-6 col-md-6">
                 <div class="academics-item" data-aos="fade-up" data-aos-delay="200">
-                    <h4>Production Setup</h4>
-                    <p>Integrated solutions from planning to final delivery:</p>
+                    <h4>{{ __('ourWork.cardHeader2') }}</h4>
+                    <p>{{ __('ourWork.cardP2') }}</p>
                     <div class="d-flex gap-3 flex-wrap justify-content-around ">
                         <div class="second-color d-flex flex-column gap-2  w-45 radius pt-3   ">
                             <div class=""><i class="fa-solid fa-microphone main-color"></i></div>
                             <div class="">
-                                <P>Pro Studios</P>
+                                <P>{{ __('ourWork.icon1') }}</P>
                             </div>
                         </div>
                         <div class="second-color d-flex flex-column gap-2 w-45 radius pt-3 ">
                             <div class=""><i class="fa-solid fa-tv main-color"></i></div>
                             <div class="">
-                                <p>Industry Gear</p>
+                                <p>{{ __('ourWork.icon2') }}</p>
                             </div>
                         </div>
                         <div class="second-color d-flex flex-column gap-2 w-45 radius pt-3 ">
                             <div class=""><i class="fa-solid fa-users main-color"></i></div>
                             <div class="">
-                                <p>Global Teams</p>
+                                <p>{{ __('ourWork.icon3') }}</p>
                             </div>
                         </div>
                         <div class="second-color d-flex flex-column gap-2  w-45 radius pt-3 ">
                             <div class=""><i class="fa-solid fa-graduation-cap main-color"></i></div>
                             <div class="">
-                                <p>Integration</p>
+                                <p>{{ __('ourWork.icon4') }}</p>
                             </div>
                         </div>
                     </div>
@@ -223,9 +223,9 @@
     <div class="container">
         <div class="section-title section-title-2" data-aos="fade-up" data-aos-delay="100">
             <div class="sub-title">
-                <p>Selected Works</p>
+                <p>{{ __("ourWork.selectedTitle") }}</p>
             </div>
-            <h1 class="text-white">Portfolio Highlights</h1>
+            <h1 class="text-white">{{ __("ourWork.selectedHeader") }}</h1>
         </div>
 
         <div class="row justify-content-center">

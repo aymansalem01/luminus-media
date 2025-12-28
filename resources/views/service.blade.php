@@ -160,7 +160,7 @@
 </div> --}}
 <!-- End work field Area -->
 
-{{-- Test section  --}}
+{{-- scope section  --}}
 <div class="col-lg-12 container pt-5">
     <h2 class="scope-heder">{{ __('service.scope') }}</h2>
     <div class="ac-overview">
@@ -198,7 +198,7 @@
         </div>
     </div>
 </div>
-{{-- end test --}}
+{{-- end scope section --}}
 {{-- contact button --}}
 <div class="faculty-area ptb-100">
     <div class="container">

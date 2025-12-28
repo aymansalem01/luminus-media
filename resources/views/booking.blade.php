@@ -230,12 +230,11 @@
         </h1>
 
         <p class="lead text-white mb-5 mx-auto" style="max-width: 700px;">
-            Luminus Film & Media executes TV production, animation, commercials,
-            and diverse visual content projects within a professional environment.
+            {{__('booking.bookingP')}}
         </p>
 
         <a href="#book" class="heroSection-btn">
-            Book a Studio Now
+            {{ __('booking.bookingButton') }}
         </a>
     </div>
 </section>
@@ -246,35 +245,35 @@
 <section class="in-studio">
     <div class="container">
         <div class="header">
-            <h1>What can be <span>done in</span> our studios?</h1>
+            <h1>{{ __('booking.cardTitle') }}</h1>
         </div>
         <div class="card-holder">
             <div class="card">
                 <div> <i class="fa-solid fa-microphone fa-lg "></i> </div>
                 <div>
-                    <h4>Music & Vocal Recording</h4>
-                    <p>Full band sessions and high-fidelity vocal recordings.</p>
+                    <h4>{{ __('booking.cardTitle1') }}</h4>
+                    <p>{{ __('booking.cardP1') }}</p>
                 </div>
             </div>
             <div class="card">
                 <div> <i class="fa-solid fa-sliders "></i> </div>
                 <div>
-                    <h4>Mixing & Mastering</h4>
-                    <p>Professional audio engineering using state-of-the-art equipment.</p>
+                    <h4>{{ __('booking.cardTitle2') }}</h4>
+                    <p>{{ __('booking.cardP2') }}</p>
                 </div>
             </div>
             <div class="card">
                 <div> <i class="fa-solid fa-video "></i> </div>
                 <div>
-                    <h4>Visual Production</h4>
-                    <p>Interview filming, Chroma key (Green/Blue), and YouTube content.</p>
+                    <h4>{{ __('booking.cardTitle3') }}</h4>
+                    <p>{{ __('booking.cardP3') }}</p>
                 </div>
             </div>
             <div class="card">
                 <div> <i class="fa-solid fa-headphones "></i></div>
                 <div>
-                    <h4>Podcast & Voice Over</h4>
-                    <p>Isolated and crisp environment for talk shows and VO.</p>
+                    <h4>{{ __('booking.cardTitle4') }}</h4>
+                    <p>{{ __('booking.cardP4') }}</p>
                 </div>
             </div>
 
@@ -287,7 +286,7 @@
 <section class="studios">
     <div class="container">
         <div class="header">
-            <h2>Available Studios & Facilities</h2>
+            <h2>{{ __('booking.studioTitle') }}</h2>
         </div>
         <div class="card-holder">
             <div class="card">

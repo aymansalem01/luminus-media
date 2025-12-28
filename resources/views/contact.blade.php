@@ -19,10 +19,9 @@
             <div class="col-lg-8">
                 <div class="contact-content">
                     <div class="header-content">
-                        <h2 data-aos="fade-up" data-aos-delay="100" >Contact Us</h2>
-                        <h3>We’d Love To Hear From You</h3>
-                        <p>We welcome contact with institutions, partners, and those interested in collaborating in creative education, media and film production, and capacity building.</p>
-                        <p>For verifications, please email <a href="mailto:info@saejordan.com">info@saejordan.com</a></p>
+                        <h2 data-aos="fade-up" data-aos-delay="100" >{{ __('contact.title') }}</h2>
+                        <p>{{ __('contact.welcome') }}</p>
+                        <p>{{ __('contact.email') }} <a href="mailto:info@saejordan.com">info@saejordan.com</a></p>
                     </div>
 
                     <div class="contact-form">
@@ -108,7 +107,7 @@
 
                     <div class="info-details">
                         <ul>
-                            <li><i class='bx bxs-phone-call'></i> General Inquiries - <a href="tel:+96264000707">(06) 400 0707</a></li>
+                            <li><i class='bx bxs-phone-call'></i> {{ __('contact.phone') }} <a href="tel:+96264000707">(06) 400 0707</a></li>
                             <li><i class='bx bxs-map'></i> Amman, Jordan</li>
                             <li><i class='bx bxs-envelope'></i><a class="info-mail"
                                     href="mailto:info@saejordan.com">info@saejordan.com</a></li>

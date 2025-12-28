@@ -1,5 +1,7 @@
 <?php
 return [
+    "title" => "Our Work in",
+    "span" => " Production",
     "first_paragraph"=> "Luminus Film & Media executes TV production, animation, commercials,
             and diverse visual content projects within a professional environment.",
     "view_button"=> "View Work",
@@ -18,5 +20,18 @@ return [
     "cartoon_first"=> "Educational Animation Production",
     "cartoon_second" => "Cartoons for Children and Youth",
     "cartoon_third" => "Character Design and Conceptual Art",
+    "cardHeader1" => "Model & Execution",
+    "cardP1" => "Flexible production models tailored for excellence:",
+    "cardLi1" => "Independent Production",
+    "cardLi2" => "Executive Partnerships",
+    "cardLi3" => "Joint Ventures & Institutional Support",
+    "cardHeader2" => "Production Setup",
+    "cardP2" => "Integrated solutions from planning to final delivery:",
+    "icon1" => "Pro Studio",
+    "icon2" => "Industry Gear",
+    "icon3" => "Global Teams",
+    "icon4" => "Integration",
+    "selectedTitle" => "SELECTED WORKS",
+    "selectedHeader" => "Portfolio Highlights",
 
 ];
