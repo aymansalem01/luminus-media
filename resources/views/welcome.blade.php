@@ -177,10 +177,10 @@
 <!-- End why sae Area -->
 
 <!-- Start Campus Area 2 -->
-<div class="campus-area-2 pt-100">
+<div class="campus-area-2 pt-100" dir="ltr" >
     <div class="container-fluaid">
         <div class="section-title section-title-2" data-aos="fade-up" data-aos-delay="100">
-            <div class="sub-title">
+            <div class="sub-title" dir="rtl">
                 <p>{{ __('home.studioTitle') }}</p>
             </div>
             <h2>{{ __('home.studioP') }}</h2>

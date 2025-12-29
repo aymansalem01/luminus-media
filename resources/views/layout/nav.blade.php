@@ -11,7 +11,7 @@
     <!-- preloader -->
 
     <!--  Navbar Area  -->
-    <div class="navbar-area style-2" id="navbar">
+    <div class="navbar-area style-2" id="navbar" dir="ltr">
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg">
                 <a class="navbar-brand" href="#">
@@ -25,47 +25,41 @@
                 <div class="collapse navbar-collapse justify-content-between">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item">
-                            <a href="{{route('index')}}" class=" nav-link ">
-                                Home
+                            <a href="{{ route('index') }}" class=" nav-link ">
+                                {{ __('nav.home') }}
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{route('service')}}" class=" nav-link  ">
-                                Services
+                            <a href="{{ route('service') }}" class=" nav-link  ">
+                                {{ __('nav.service') }}
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{route('ourWork')}}" class=" nav-link  ">
-                                Our Works
-                            </a>
-                        </li>
-                        {{-- <li class="nav-item">
-                            <a href="{{route('howWork')}}" class=" nav-link  ">
-                                How We Work
-                            </a>
-                        </li> --}}
-                        {{-- <li class="nav-item">
-                            <a href="{{route('why')}}" class=" nav-link  ">
-                                Why SAE
-                            </a>
-                        </li> --}}
-                        <li class="nav-item">
-                            <a href="{{route('booking')}}" class=" nav-link  ">
-                                Booking Studio
+                            <a href="{{ route('ourWork') }}" class=" nav-link  ">
+                                {{ __('nav.ourWork') }}
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{route('contact')}}" class=" nav-link  ">
-                                Contact US
+                            <a href="{{ route('booking') }}" class=" nav-link  ">
+                                {{ __('nav.booking') }}
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route('contact') }}" class=" nav-link  ">
+                                {{ __('nav.contact') }}
                             </a>
                         </li>
 
 
                     </ul>
-                    <div class="others-option d-flex align-items-center">
+                    <div class=" d-flex align-items-center ">
                         <div class="option-item">
                             <div class="nav-btn">
-                                {{-- <a href="{{route('ar')}}" class="default-btn">عربي</a> --}}
+                                @if (app()->getLocale() == 'ar')
+                                    <a href="{{ route('switchLang', 'en') }}" class="another-btn">English</a>
+                                @else
+                                    <a href="{{ route('switchLang', 'ar') }}" class="another-btn">عربي</a>
+                                @endif
                             </div>
                         </div>
                     </div>
@@ -84,15 +78,15 @@
         <div class="offcanvas-body">
             <div class="accordion" id="navbarAccordion">
                 <div class="accordion-item">
-                    <a href="{{route('index')}}" class="accordion-link">Home</a>
+                    <a href="{{ route('index') }}" class="accordion-link">{{ __('nav.home') }}</a>
                 </div>
 
                 <div class="accordion-item">
-                    <a href="{{route('service')}}" class="accordion-link">Services</a>
+                    <a href="{{ route('service') }}" class="accordion-link">{{ __('nav.service') }}</a>
                 </div>
 
                 <div class="accordion-item">
-                    <a href="{{route('ourWork')}}" class="accordion-link">Our Works</a>
+                    <a href="{{ route('ourWork') }}" class="accordion-link">{{ __('nav.ourWork') }}</a>
                 </div>
 
                 {{-- <div class="accordion-item">
@@ -104,11 +98,11 @@
                 </div> --}}
 
                 <div class="accordion-item">
-                    <a href="{{route('booking')}}" class="accordion-link">Booking Studio</a>
+                    <a href="{{ route('booking') }}" class="accordion-link">{{ __('nav.booking') }}</a>
                 </div>
 
                 <div class="accordion-item">
-                    <a href="{{route('contact')}}" class="accordion-link">Contact Us</a>
+                    <a href="{{ route('contact') }}" class="accordion-link">{{ __('nav.contact') }}</a>
                 </div>
 
             </div>

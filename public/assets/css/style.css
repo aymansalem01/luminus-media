@@ -244,6 +244,7 @@ p:last-child {
 
 .heroSection-btn:hover{
     background-color: var(--mainBackground);
+    color: white;
 }
 
 .another-btn:hover{
