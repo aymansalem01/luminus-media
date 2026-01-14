@@ -219,7 +219,7 @@
 <!-- End why sae Area -->
 <hr style=" border-width: 5px; ">
 <!-- Start Success Area 2 -->
-<div class="success-area success-area-2 ptb-100" id="videos">
+{{-- <div class="success-area success-area-2 ptb-100" id="videos">
     <div class="container">
         <div class="section-title section-title-2" data-aos="fade-up" data-aos-delay="100">
             <div class="sub-title">
@@ -286,7 +286,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}
 <!-- End Success Area 2 -->
 
 
